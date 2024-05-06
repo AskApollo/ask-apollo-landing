@@ -23,6 +23,8 @@ export type Theme =
   | "night"
   | "cmyk"
   | "winter"
+  | "nord"
+  | "mytheme"
   | "";
 
 export interface ConfigProps {

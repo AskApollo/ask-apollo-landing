@@ -77,11 +77,11 @@ export default function Home() {
         {/* <FeaturesAccordion /> */}
         <FeaturesListicle />
         <Pricing />
-        <Testimonial />
+        {/* <Testimonial /> */}
         {/* <TestimonialRating /> */}
-        <Testimonials11 />
+        {/* <Testimonials11 /> */}
         <Testimonials3 />
-        <TestimonialsAvatars />
+        {/* <TestimonialsAvatars /> */}
         <FAQ />
         <CTA />
         <FounderStory />
