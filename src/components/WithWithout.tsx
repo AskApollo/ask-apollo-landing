@@ -10,7 +10,7 @@ const WithWithout = () => {
       <div className="max-w-5xl mx-auto px-8 py-16 md:py-32 ">
         <h2 className="text-center font-extrabold text-3xl md:text-5xl tracking-tight mb-12 md:mb-20">
           {/* Tired of managing customer support and resolving support tickets? */}
-          Tired of customers leaving you?
+          Improve customer support experience!
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12">
@@ -81,13 +81,13 @@ const WithWithout = () => {
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mt-12 text-center">
           <Step emoji="🤔" text="Customers asks a query" />
 
-          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
+          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90 fill-neutral" />
 
-          <Step emoji="🤯" text="Gets response quickly and accurately" />
+          <Step emoji="🤯" text="CyanArrow responds quickly and accurately" />
 
-          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
+          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90 fill-neutral" />
 
-          <Step emoji="😃" text="Happy customer" />
+          <Step emoji="😃" text="Amazed & Happy customers" />
         </div>
       </div>
     </section>

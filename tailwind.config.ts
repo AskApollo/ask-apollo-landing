@@ -67,10 +67,10 @@ module.exports = {
       "light", 
       // "dark",
       {dark: {...require("daisyui/src/theming/themes")["dark"], primary: "#22d3ee"}}, 
-      "business", 
+      "luxury", 
       // {winter: {...require("daisyui/src/theming/themes")["winter"], primary: "#22d3ee"}}, 
-      {night: {...require("daisyui/src/theming/themes")["night"], primary: "#22d3ee"}},
-      {nord: {...require("daisyui/src/theming/themes")["nord"], primary: "#22d3ee"}}
+      {cupcake: {...require("daisyui/src/theming/themes")["cupcake"], primary: "#22d3ee"}},
+      {coffee: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee"}}
     ],
 
   },

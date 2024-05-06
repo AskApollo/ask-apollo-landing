@@ -11,23 +11,24 @@ const list: {
 }[] = [
   {
     // Optional, use for social media like Twitter. Does not link anywhere but cool to display
-    username: "marclou",
+    username: "linonel_3",
     // REQUIRED
-    name: "Marc Lou",
+    name: "Lionel T.",
     // REQUIRED
-    text: "Really easy to use. The tutorials are really useful and explains how everything works. Hope to ship my next project really fast!",
+    text: "For anyone on the fence - in the 1 hour I've set up and gone live on separate websites with CyanArrow. ",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
-    img: "https://pbs.twimg.com/profile_images/1514863683574599681/9k7PqDTA_400x400.jpg",
+    img: "https://images.unsplash.com/photo-1714118657863-2843a622718b?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
   {
-    username: "the_mcnaveen",
-    name: "Naveen",
-    text: "Setting up everything from the ground up is a really hard, and time consuming process. What you pay for will save your time for sure.",
+    username: "the_mcmills",
+    name: "Derek Mills",
+    text: "Setting up everything is quick. Creating ticket forms is a breeze with drag-drop fields. Love it!",
   },
   {
-    username: "wahab",
-    name: "Wahab Shaikh",
-    text: "Easily saves 15+ hrs for me setting up trivial stuff. Now, I can directly focus on shipping features rather than hours of setting up the same technologies from scratch. Feels like a super power! :D",
+    username: "sanagi11",
+    name: "Sana Gill",
+    text: "This is awesome, thanks for building it! Saved a lot of time in Customer Support!",
+    img: "https://images.unsplash.com/photo-1714429558272-c8fe5874969d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
   },
 ];
 
@@ -87,12 +88,12 @@ const Testimonials3 = () => {
         <div className="flex flex-col text-center w-full mb-20">
           <div className="mb-8">
             <h2 className="sm:text-5xl text-4xl font-extrabold text-base-content">
-              212 makers are already shipping faster!
+              50+ happy customers!
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
             Don&apos;t take our word for it. Here&apos;s what they have to say
-            about ShipFast.
+            about CyanArrow.
           </p>
         </div>
 

@@ -1,12 +1,14 @@
+import Image from "next/image";
+
 export default function FounderStory() {
     return (
         <section className="bg-base-100" id="demo">
             <div className="py-24 max-md:px-8 max-w-3xl mx-auto">
                 <div className="leading-relaxed text-base-content/80 mb-12 max-w-xl mx-auto">
-                    <img alt="Marc Lou — Product Hunt Maker of the Year 2023" loading="lazy" width="200" height="200" decoding="async" data-nimg="1"
+                    <Image alt="Anshul Kumar - Dreamer, Builder" loading="lazy" width="200" height="200"
                         className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-8 mb-8 object-center object-cover"
-                        src="/_next/image?url=%2F_next%2Fstatic%2Fmedia%2Fmaker-of-the-year-2023.285fe739.png&amp;w=640&amp;q=75"/>
-                        <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Marc 👋</p>
+                        src="/assets/mine.png"/>
+                        <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Anshul 👋</p>
                         <p className="mb-5">In 2018, I believed I was Mark Zuckerberg, built a startup for 1 year, and got 0 users...</p>
                         <p className="mb-5">A few years after my burnout, I restarted the journey differently: I shipped like a madman—
                             <a className="link text-base-content font-medium hover:link-accent whitespace-nowrap" target="_blank" href="https://marclou.com?ref=shipfast_intro">

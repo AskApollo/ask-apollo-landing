@@ -475,7 +475,7 @@ const FeaturesListicle = () => {
                 <h3 className="font-semibold text-base-content text-lg">
                   {features.find((f) => f.name === featureSelected)["name"]}
                 </h3>
-                <button className="btn btn-neutral btn-xs text-primary">
+                <button className="btn btn-accent btn-xs ">
                   <PlayCircle className=" h-6 w-6 " />
                   Watch
                 </button>
