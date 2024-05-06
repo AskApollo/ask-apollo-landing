@@ -59,6 +59,9 @@ import Testimonials11 from '@/src/components/Testimonials11';
 import Testimonials3 from '@/src/components/Testimonials3';
 import TestimonialsAvatars from '@/src/components/TestimonialsAvatars';
 import FeaturesListicle from '../components/FeaturesListicle';
+import WithWithout from '../components/WithWithout';
+import TechUsed from '../components/TechUsed';
+import FounderStory from '../components/FounderStory';
 
 export default function Home() {
   return (
@@ -68,7 +71,9 @@ export default function Home() {
       </Suspense>
       <main>
         <Hero />
+        <TechUsed />
         <Problem />
+        <WithWithout />
         {/* <FeaturesAccordion /> */}
         <FeaturesListicle />
         <Pricing />
@@ -79,6 +84,7 @@ export default function Home() {
         <TestimonialsAvatars />
         <FAQ />
         <CTA />
+        <FounderStory />
       </main>
       <Footer />
     </>

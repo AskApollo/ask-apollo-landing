@@ -165,7 +165,7 @@ const HeaderBlog = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
+              className="w-8 h-8"
               priority={true}
               width={32}
               height={32}
@@ -233,7 +233,7 @@ const HeaderBlog = () => {
               <Image
                 src={logo}
                 alt={`${config.appName} logo`}
-                className="w-8"
+                className="w-8 h-8"
                 priority={true}
                 width={32}
                 height={32}

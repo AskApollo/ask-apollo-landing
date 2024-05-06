@@ -8,6 +8,9 @@ import Image from "next/image";
 import ButtonSignin from "./ButtonSignin";
 import logo from "@/public/assets/logo.svg";
 import config from "@/config";
+import { Anek_Latin } from "next/font/google";
+
+const anek = Anek_Latin({ subsets: ["latin"] })
 
 const links: {
   href: string;
@@ -27,7 +30,7 @@ const links: {
   },
 ];
 
-const cta: JSX.Element = <ButtonSignin extraStyle="btn-secondary" text="Get Access Now" />;
+const cta: JSX.Element = <ButtonSignin extraStyle="btn-primary" text="Login" />;
 
 // A header with a logo on the left, links in the center (like Pricing, etc...), and a CTA (like Get Started or Login) on the right.
 // The header is responsive, and on mobile, the links are hidden behind a burger button.
@@ -41,7 +44,7 @@ const Header = () => {
   }, [searchParams]);
 
   return (
-    <header className="bg-base-200">
+    <header className="bg-neutral text-neutral-content">
       <nav
         className="container flex items-center justify-between px-8 py-4 mx-auto"
         aria-label="Global"
@@ -56,12 +59,13 @@ const Header = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8"
+              className="w-8 h-8"
               priority={true}
               width={32}
               height={32}
             />
-            <span className="font-extrabold text-lg">{config.appName}</span>
+            {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
+            <span className={`${anek.className} text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -122,12 +126,13 @@ const Header = () => {
               <Image
                 src={logo}
                 alt={`${config.appName} logo`}
-                className="w-8"
+                className="w-8 h-8"
                 priority={true}
                 width={32}
                 height={32}
               />
-              <span className="font-extrabold text-lg">{config.appName}</span>
+              {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
+              <span className={`${anek.className} text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
             </Link>
             <button
               type="button"

@@ -1,4 +1,4 @@
-const Arrow = ({ extraStyle }: { extraStyle: string }) => {
+export const Arrow = ({ extraStyle }: { extraStyle: string }) => {
   return (
     <svg
       className={`shrink-0 w-12 fill-neutral-content opacity-70 ${extraStyle}`}
@@ -21,7 +21,7 @@ const Arrow = ({ extraStyle }: { extraStyle: string }) => {
     </svg>
   );
 };
-const Step = ({ emoji, text }: { emoji: string; text: string }) => {
+export const Step = ({ emoji, text }: { emoji: string; text: string }) => {
   return (
     <div className="w-full md:w-48 flex flex-col gap-2 items-center justify-center">
       <span className="text-4xl">{emoji}</span>
@@ -44,23 +44,24 @@ const Problem = () => {
     <section className="bg-neutral text-neutral-content">
       <div className="max-w-7xl mx-auto px-8 py-16 md:py-32 text-center">
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
-          80% of startups fail because founders never launch
+          {/* 80% of startups fail because founders never launch */}
+          {/* 50% Customers actively seek alternative providers after just 1 poor support experience */}
+          50% of Customers switch to other providers after one bad support experience
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Emails, DNS records, user authentication... There&apos;s so much going
-          on.
+          Poor customer service can cause customers to churn, or stop buying
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
-          <Step emoji="🧑‍💻" text="8 hrs to add Stripe" />
+          <Step emoji="🧑‍💻" text="3+ months training for customer support" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😮‍💨" text="Struggle to find time" />
+          <Step emoji="😮‍💨" text="Trained staff still struggle to assist accurately" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😔" text="Quit project" />
+          <Step emoji="😔" text="Unhappy customers leave you" />
         </div>
       </div>
     </section>

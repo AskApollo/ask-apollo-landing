@@ -28,8 +28,8 @@ const Hero = () => {
         <h1 className={` ${bgr.className} font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4 `}>
           <span className=" flex !mb-2 ">Save Time & Reduce Costs with{" "}{" "}</span>
           <span className=" relative whitespace-nowrap ">
-            <span className="absolute bg-secondary-content bg -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
-            <span className="relative text-secondary">AI Support Agent</span>
+            <span className="absolute bg-neutral-content bg -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
+            <span className="relative text-neutral">AI Support Agent</span>
           </span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
