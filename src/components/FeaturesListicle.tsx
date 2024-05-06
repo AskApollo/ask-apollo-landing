@@ -387,7 +387,7 @@ const FeaturesListicle = () => {
         const nextIndex = (index + 1) % features.length;
         setFeatureSelected(features[nextIndex].name);
       }
-    }, 2000);
+    }, 3000);
 
     try {
       // stop the interval when the user scroll after the featuresRef element
@@ -468,7 +468,7 @@ const FeaturesListicle = () => {
         <div className="bg-base-200 h-[28rem]">
           <div className="max-w-3xl mx-auto flex flex-col md:flex-row justify-center md:justify-start md:items-center gap-12">
             <div
-              className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity"
+              className="text-base-content/80 leading-relaxed space-y-4 px-12 md:px-0 py-12 max-w-xl animate-opacity w-full"
               key={featureSelected}
             >
               <span className=" flex gap-4 items-center w-full justify-between">

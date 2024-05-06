@@ -53,11 +53,11 @@ const Problem = () => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
-          <Step emoji="🧑‍💻" text="3+ months training for customer support" />
+          <Step emoji="👨‍💻" text="3+ months training for customer support" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😮‍💨" text="Trained staff still struggle to assist accurately" />
+          <Step emoji="😅" text="Trained staff still struggle to assist accurately" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 

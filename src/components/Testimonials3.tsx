@@ -25,7 +25,7 @@ const list: {
     text: "Setting up everything is quick. Creating ticket forms is a breeze with drag-drop fields. Love it!",
   },
   {
-    username: "sanagi11",
+    username: "sana_gi11",
     name: "Sana Gill",
     text: "This is awesome, thanks for building it! Saved a lot of time in Customer Support!",
     img: "https://images.unsplash.com/photo-1714429558272-c8fe5874969d?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"

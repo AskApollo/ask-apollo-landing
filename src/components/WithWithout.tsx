@@ -81,11 +81,11 @@ const WithWithout = () => {
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mt-12 text-center">
           <Step emoji="🤔" text="Customers asks a query" />
 
-          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90 fill-neutral" />
+          <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90 fill-success" />
 
           <Step emoji="🤯" text="CyanArrow responds quickly and accurately" />
 
-          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90 fill-neutral" />
+          <Arrow extraStyle="md:-scale-x-100 md:-rotate-90 fill-success" />
 
           <Step emoji="😃" text="Amazed & Happy customers" />
         </div>
