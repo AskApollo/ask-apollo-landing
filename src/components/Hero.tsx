@@ -4,11 +4,13 @@ import TestimonialsAvatars from "./TestimonialsAvatars";
 import { Bricolage_Grotesque } from "next/font/google";
 import ButtonGradient from "./ButtonGradient";
 import Link from "next/link";
-const bgr = Bricolage_Grotesque({ subsets: ["latin"] });
+import { VideoPlayer } from "./VideoPlayer";
+import { cn } from "../libs/utils";
+const bgr = Bricolage_Grotesque({ subsets: ["latin"], display: "swap", adjustFontFallback: false, variable: '--font-brigro' });
 
 const Hero = () => {
   return (
-    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20">
+    <section className="max-w-7xl mx-auto bg-base-100 flex flex-col lg:flex-row items-center justify-center gap-16 lg:gap-20 px-8 py-8 lg:py-20 ">
       <div className="flex flex-col gap-10 lg:gap-14 items-center justify-center text-center lg:text-left lg:items-start">
         {/* <a
           href="https://www.producthunt.com/posts/shipfast-2?utm_source=badge-top-post-badge&utm_medium=badge&utm_souce=badge-shipfast&#0045;2"
@@ -25,11 +27,11 @@ const Hero = () => {
           </svg>
         </a> */}
 
-        <h1 className={` ${bgr.className} font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4 `}>
+        <h1 className={cn( bgr.variable, "font-sans font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4")}>
           <span className=" flex !mb-2 ">Save Time & Reduce Costs with{" "}{" "}</span>
           <span className=" relative whitespace-nowrap ">
-            <span className="absolute bg-neutral-content bg -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
-            <span className="relative text-neutral">AI Support Agent</span>
+            <span className="absolute bg-[var(--fallback-bc,oklch(var(--bc)/1))] -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
+            <span className="relative text-base-100">AI Support Agent</span>
           </span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
@@ -45,21 +47,35 @@ const Hero = () => {
           <p className="text-sm flex justify-center items-center gap-2 md:text-sm">
             <Gift />
             <span>
-              <span className="text-accent">$99 Lifetime deal</span> for the first 100 customers
+              <span className="text-secondary">$99 Lifetime deal</span> for the first 100 customers
             </span>
           </p>
         </Link>
         <TestimonialsAvatars priority={true} />
       </div>
       <div className="lg:w-full">
-        <Image
+        {/* <Image
           src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
           alt="Product Demo"
           className="w-full"
           priority={true}
           width={500}
           height={500}
-        />
+        /> */}
+        <div className="mockup-window border bg-base-300" style={{boxShadow: "0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)"}}>
+          <div className="flex justify-center p-2 rounded bg-base-200">
+            <Image
+              src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
+              alt="Product Demo"
+              className="w-full rounded-lg"
+              priority={true}
+              width={500}
+              height={500}
+            />
+            {/* <VideoPlayer src="https://www.youtube.com/watch?v=31mM-OPYs9A" /> */}
+            {/* <iframe width="560" height="315" className=" w-full " src="https://www.youtube.com/embed/31mM-OPYs9A?si=s-Fbr4CKxVqQQ3bs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
+          </div>
+        </div>
       </div>
     </section>
   );
@@ -69,7 +85,7 @@ export default Hero;
 
 function Gift() {
   return (
-    <svg className="w-5 h-5 fill-accent animate-pulse" viewBox="0 0 161 154" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-5 h-5 fill-secondary animate-pulse" viewBox="0 0 161 154" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_8_2399)">
         <path d="M13.9653 26.3929C13.3454 26.4007 12.7254 26.3891 12.1055 26.3781C10.9378 26.3371 9.76879 26.3561 
               8.60306 26.4349C4.24676 26.7979 2.47252 28.6135 2.27301 32.9093C1.97374 39.3929 1.71523 45.9857 1.46519 52.3619L1.1867 59.4195C1.16791 59.8841 

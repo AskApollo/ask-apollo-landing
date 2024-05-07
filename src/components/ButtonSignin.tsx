@@ -3,7 +3,7 @@
 
 import { useSession, signIn } from "next-auth/react";
 import Link from "next/link";
-import { useRouter } from "next/navigation";
+// import { useRouter } from "next/navigation";
 import config from "@/config";
 
 // A simple button to sign in with our providers (Google & Magic Links).
@@ -16,16 +16,16 @@ const ButtonSignin = ({
   text?: string;
   extraStyle?: string;
 }) => {
-  const router = useRouter();
+  // const router = useRouter();
   const { data: session, status } = useSession();
 
-  const handleClick = () => {
-    if (status === "authenticated") {
-      router.push(config.auth.callbackUrl);
-    } else {
-      signIn(undefined, { callbackUrl: config.auth.callbackUrl });
-    }
-  };
+  // const handleClick = () => {
+  //   if (status === "authenticated") {
+  //     router.push(config.auth.callbackUrl);
+  //   } else {
+  //     signIn(undefined, { callbackUrl: config.auth.callbackUrl });
+  //   }
+  // };
 
   if (status === "authenticated") {
     return (
@@ -53,12 +53,12 @@ const ButtonSignin = ({
   }
 
   return (
-    <button
-      className={`btn ${extraStyle ? extraStyle : ""}`}
-      onClick={handleClick}
+    <Link
+      className={`btn btn-sm ${extraStyle ? extraStyle : ""}`}
+      href="https://app.cyanarrow.com" target="_blank"
     >
       {text}
-    </button>
+    </Link>
   );
 };
 

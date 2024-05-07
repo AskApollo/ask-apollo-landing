@@ -1,3 +1,5 @@
+const { fontFamily } = require("tailwindcss/defaultTheme")
+
 module.exports = {
   content: [
     "./src/app/**/*.{js,ts,jsx,tsx,mdx}",
@@ -7,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      fontFamily: {
+        sans: ["var(--font-brigro)", ...fontFamily.sans],
+      },
       backgroundImage: {
         gradient:
           "linear-gradient(60deg, #f79533, #f37055, #ef4e7b, #a166ab, #5073b8, #1098ad, #07b39b, #6fba82)",
@@ -64,13 +69,14 @@ module.exports = {
     // Add "data-theme='theme_name" to any HTML tag to enable the 'theme_name' theme.
     // https://daisyui.com/
     themes: [
-      "light", 
+      {light: {...require("daisyui/src/theming/themes")["light"], primary: "#22d3ee"}}, 
       // "dark",
       {dark: {...require("daisyui/src/theming/themes")["dark"], primary: "#22d3ee"}}, 
       "luxury", 
       // {winter: {...require("daisyui/src/theming/themes")["winter"], primary: "#22d3ee"}}, 
       {cupcake: {...require("daisyui/src/theming/themes")["cupcake"], primary: "#22d3ee"}},
-      {coffee: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee"}}
+      {coffee: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee"}},
+      {bumblebee: {...require("daisyui/src/theming/themes")["bumblebee"], primary: "#22d3ee"}},
     ],
 
   },
