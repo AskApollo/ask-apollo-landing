@@ -2,9 +2,9 @@
 
 import { ReactNode, useEffect } from "react";
 import { usePathname } from "next/navigation";
-import { useSession } from "next-auth/react";
+// import { useSession } from "next-auth/react";
 import { Crisp } from "crisp-sdk-web";
-import { SessionProvider } from "next-auth/react";
+// import { SessionProvider } from "next-auth/react";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";
@@ -14,7 +14,7 @@ import config from "@/config";
 // This component is separated from ClientLayout because it needs to be wrapped with <SessionProvider> to use useSession() hook
 const CrispChat = (): null => {
   const pathname = usePathname();
-  const { data } = useSession();
+  // const { data } = useSession();
 
   useEffect(() => {
     if (config?.crisp?.id) {
@@ -36,11 +36,11 @@ const CrispChat = (): null => {
   }, [pathname]);
 
   // Add User Unique ID to Crisp to easily identify users when reaching support (optional)
-  useEffect(() => {
-    if (data?.user && config?.crisp?.id) {
-      Crisp.session.setData({ userId: data.user?.id });
-    }
-  }, [data]);
+  // useEffect(() => {
+  //   if (data?.user && config?.crisp?.id) {
+  //     Crisp.session.setData({ userId: data.user?.id });
+  //   }
+  // }, [data]);
 
   return null;
 };
@@ -54,7 +54,7 @@ const CrispChat = (): null => {
 const ClientLayout = ({ children }: { children: ReactNode }) => {
   return (
     <>
-      <SessionProvider>
+      {/* <SessionProvider> */}
         {/* Show a progress bar at the top when navigating between pages */}
         <NextTopLoader color={config.colors.main} showSpinner={false} />
 
@@ -76,7 +76,7 @@ const ClientLayout = ({ children }: { children: ReactNode }) => {
 
         {/* Set Crisp customer chat support */}
         <CrispChat />
-      </SessionProvider>
+      {/* </SessionProvider> */}
     </>
   );
 };

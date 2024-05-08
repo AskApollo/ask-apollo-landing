@@ -1,7 +1,7 @@
 import { ReactNode } from "react";
 import { redirect } from "next/navigation";
-import { getServerSession } from "next-auth";
-import { authOptions } from "@/src/libs/next-auth";
+// import { getServerSession } from "next-auth";
+// import { authOptions } from "@/src/libs/next-auth";
 import config from "@/config";
 
 // This is a server-side component to ensure the user is logged in.
@@ -14,11 +14,11 @@ export default async function LayoutPrivate({
 }: {
   children: ReactNode;
 }) {
-  const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
 
-  if (!session) {
-    redirect(config.auth.loginUrl);
-  }
+  // if (!session) {
+  //   redirect(config.auth.loginUrl);
+  // }
 
   return <>{children}</>;
 }

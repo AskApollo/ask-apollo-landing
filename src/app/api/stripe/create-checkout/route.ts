@@ -1,6 +1,6 @@
 import { NextResponse, NextRequest } from "next/server";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/src/libs/next-auth";
+// import { getServerSession } from "next-auth/next";
+// import { authOptions } from "@/src/libs/next-auth";
 import { createCheckout } from "@/src/libs/stripe";
 import connectMongo from "@/src/libs/mongoose";
 import User from "@/src/models/User";
@@ -32,11 +32,11 @@ export async function POST(req: NextRequest) {
   }
 
   try {
-    const session = await getServerSession(authOptions);
+    // const session = await getServerSession(authOptions);
 
     await connectMongo();
 
-    const user = await User.findById(session?.user?.id);
+    const user: any = null;//await User.findById(session?.user?.id);
 
     const { priceId, mode, successUrl, cancelUrl } = body;
 
@@ -46,7 +46,7 @@ export async function POST(req: NextRequest) {
       successUrl,
       cancelUrl,
       // If user is logged in, it will pass the user ID to the Stripe Session so it can be retrieved in the webhook later
-      clientReferenceId: user?._id?.toString(),
+      clientReferenceId: "Anonymous user",
       // If user is logged in, this will automatically prefill Checkout data like email and/or credit card for faster checkout
       user,
       // If you send coupons from the frontend, you can pass it here

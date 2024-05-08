@@ -69,14 +69,14 @@ module.exports = {
     // Add "data-theme='theme_name" to any HTML tag to enable the 'theme_name' theme.
     // https://daisyui.com/
     themes: [
-      {light: {...require("daisyui/src/theming/themes")["light"], primary: "#22d3ee"}}, 
+      {light: {...require("daisyui/src/theming/themes")["bumblebee"], primary: "#22d3ee", ".tech-used": { "fill": "black" }}}, 
       // "dark",
-      {dark: {...require("daisyui/src/theming/themes")["dark"], primary: "#22d3ee"}}, 
-      "luxury", 
-      // {winter: {...require("daisyui/src/theming/themes")["winter"], primary: "#22d3ee"}}, 
-      {cupcake: {...require("daisyui/src/theming/themes")["cupcake"], primary: "#22d3ee"}},
-      {coffee: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee"}},
-      {bumblebee: {...require("daisyui/src/theming/themes")["bumblebee"], primary: "#22d3ee"}},
+      {dark: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee", ".tech-used": { "fill": "white" }}}, 
+      // "luxury", 
+      // // {winter: {...require("daisyui/src/theming/themes")["winter"], primary: "#22d3ee"}}, 
+      // {cupcake: {...require("daisyui/src/theming/themes")["cupcake"], primary: "#22d3ee"}},
+      // {coffee: {...require("daisyui/src/theming/themes")["coffee"], primary: "#22d3ee"}},
+      // {bumblebee: {...require("daisyui/src/theming/themes")["bumblebee"], primary: "#22d3ee"}},
     ],
 
   },
