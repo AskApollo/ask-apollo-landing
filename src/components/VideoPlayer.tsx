@@ -55,24 +55,27 @@ export const VideoPlayer = ({
     >
       <div className="relative bg-white dark:bg-black rounded-md">
         {!isPlaying ? (
-          <button
-            onClick={togglePlay}
-            className={cn(
-              'w-full h-full flex items-center justify-center absolute inset-0 bg-gradient-to-r group',
-              variant === 'primary'
-                ? 'from-primary-900/30 to-black/70'
-                : 'from-secondary-900/40 to-black/70',
-            )}
-          >
-            <PlayIcon
+          <>
+            {/* <div className=" absolute top-0 left-0 w-full h-full z-10 bg-slate-900 opacity-70 "></div> */}
+            <button aria-label="play product demo"
+              onClick={togglePlay}
               className={cn(
-                'relative z-10 inset-0 w-28 h-28 group-hover:scale-110',
+                'w-full h-full flex items-center justify-center absolute inset-0 bg-gradient-to-tr group',
                 variant === 'primary'
-                  ? 'stroke-primary fill-primary'
-                  : 'stroke-base-300 fill-base-300',
+                  ? 'from-primary/30 to-black/70'
+                  : 'from-neutral/40 to-black/70',
               )}
-            />
-          </button>
+            >
+              <PlayIcon
+                className={cn(
+                  'relative z-20 inset-0 w-28 h-28 group-hover:scale-110',
+                  variant === 'primary'
+                    ? 'stroke-primary fill-primary'
+                    : 'stroke-[var(--fallback-bc,oklch(var(--bc)/1))] fill-[var(--fallback-bc,oklch(var(--bc)/1))] opacity-70',
+                )}
+              />
+            </button>
+          </>
         ) : null}
 
         <video

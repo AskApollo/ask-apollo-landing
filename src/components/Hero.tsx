@@ -1,4 +1,4 @@
-import Image from "next/image";
+// import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
 // import config from "@/config";
 import { Bricolage_Grotesque } from "next/font/google";
@@ -62,7 +62,7 @@ const Hero = () => {
           width={500}
           height={500}
         /> */}
-        <div className="mockup-window bg-base-300" style={{boxShadow: "0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)"}}>
+        <div className="mockup-window bg-base-300 hard-shadow">
           <div className="flex justify-center p-2 rounded bg-base-200">
             {/* <Image
               src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
@@ -73,7 +73,6 @@ const Hero = () => {
               height={500}
             /> */}
             <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/tour-assets/FAQ_edit-8IbGB8sfQoUJX7jZijCnVgeiQECvDp.mp4" />
-            {/* <iframe width="560" height="315" className=" w-full " src="https://www.youtube.com/embed/31mM-OPYs9A?si=s-Fbr4CKxVqQQ3bs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
           </div>
         </div>
       </div>
