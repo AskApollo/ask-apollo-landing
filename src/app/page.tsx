@@ -62,6 +62,8 @@ import FeaturesListicle from '../components/FeaturesListicle';
 import WithWithout from '../components/WithWithout';
 import TechUsed from '../components/TechUsed';
 import FounderStory from '../components/FounderStory';
+import LiveDemo from '../components/Demo';
+import Script from 'next/script';
 
 export default function Home() {
   return (
@@ -76,6 +78,7 @@ export default function Home() {
         <WithWithout />
         {/* <FeaturesAccordion /> */}
         <FeaturesListicle />
+        <LiveDemo />
         <Pricing />
         {/* <Testimonial /> */}
         {/* <TestimonialRating /> */}
@@ -85,6 +88,22 @@ export default function Home() {
         <FAQ />
         <CTA />
         <FounderStory />
+
+        <Script async id="ca-botb">
+          {`(function(doc, tag, id) {
+            const sct = doc.querySelector(tag+"#"+id);
+            if (sct) {
+              sct.remove();
+            }
+            let js = doc.createElement(tag);
+            js.id = id;
+            js.src = 'https://app.cyanarrow.com/lib/widget/v1/prod/agent.min.js';
+            js.type = 'text/javascript';
+            js.defer = 1;
+            doc.head.appendChild(js);
+            window.supportagentloaded = false;
+          }(document, 'script', 'e2bf4ca8-f931-48c9-8886-701eda3434e7'));`}
+        </Script>
       </main>
       <Footer />
     </>

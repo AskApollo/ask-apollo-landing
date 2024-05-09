@@ -1,6 +1,4 @@
 import { NextResponse, NextRequest } from "next/server";
-// import { getServerSession } from "next-auth/next";
-// import { authOptions } from "@/src/libs/next-auth";
 import { createCheckout } from "@/src/libs/stripe";
 import connectMongo from "@/src/libs/mongoose";
 import User from "@/src/models/User";

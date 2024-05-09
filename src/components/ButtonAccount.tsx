@@ -3,7 +3,6 @@
 
 import { useState } from "react";
 import { Popover, Transition } from "@headlessui/react";
-import { useSession, signOut } from "next-auth/react";
 import apiClient from "@/src/libs/api";
 
 // A button to show user some account actions
@@ -13,11 +12,11 @@ import apiClient from "@/src/libs/api";
 //  2. Logout: sign out and go back to homepage
 // See more at https://shipfa.st/docs/components/buttonAccount
 const ButtonAccount = () => {
-  const { data: session, status } = useSession();
+  // const { data: session, status } = useSession();
   const [isLoading, setIsLoading] = useState<boolean>(false);
 
   const handleSignOut = () => {
-    signOut({ callbackUrl: "/" });
+    // signOut({ callbackUrl: "/" });
   };
   const handleBilling = async () => {
     setIsLoading(true);
@@ -46,7 +45,7 @@ const ButtonAccount = () => {
       {({ open }) => (
         <>
           <Popover.Button className="btn">
-            {session?.user?.image ? (
+            {/* {session?.user?.image ? (
               <img
                 src={session?.user?.image}
                 alt={session?.user?.name || "Account"}
@@ -60,9 +59,9 @@ const ButtonAccount = () => {
                 {session?.user?.name?.charAt(0) ||
                   session?.user?.email?.charAt(0)}
               </span>
-            )}
+            )} */}
 
-            {session?.user?.name || "Account"}
+            {/* {session?.user?.name || "Account"} */}
 
             {isLoading ? (
               <span className="loading loading-spinner loading-xs"></span>

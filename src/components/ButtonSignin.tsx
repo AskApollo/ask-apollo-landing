@@ -1,7 +1,6 @@
 /* eslint-disable @next/next/no-img-element */
 "use client";
 
-// import { useSession, signIn } from "next-auth/react";
 import Link from "next/link";
 // import { useRouter } from "next/navigation";
 import config from "@/config";

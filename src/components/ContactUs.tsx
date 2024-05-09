@@ -34,14 +34,14 @@ const ContactUs = () => {
             </div>
             <div className="mb-4">
               <label htmlFor="message" className="block text-gray-600">Message</label>
-              <textarea id="message" name="message" rows="4" className="w-full p-2 border border-gray-300 rounded"></textarea>
+              <textarea id="message" name="message" rows={4} className="w-full p-2 border border-gray-300 rounded"></textarea>
             </div>
             <button type="submit" className="btn btn-primary btn-wide">Send Message</button>
           </form>
         </div>
       </main>
     </div>
-    <Modal   isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} modalBody={modalBody} />
+    <Modal isModalOpen={isModalOpen} setIsModalOpen={setIsModalOpen} modalBody={modalBody} />
     </>
   );
 };

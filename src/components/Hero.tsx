@@ -44,10 +44,10 @@ const Hero = () => {
         </button> */}
         <Link href="#pricing" className=" space-y-4 ">
           <ButtonGradient title="Get Access Now" />
-          <p className="text-sm flex justify-center items-center gap-2 md:text-sm">
+          <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
             <Gift />
             <span>
-              <span className="text-secondary">$99 Lifetime deal</span> for the first 100 customers
+              <span className="offer">$99 Lifetime deal</span> for the first 100 customers
             </span>
           </p>
         </Link>
@@ -62,17 +62,17 @@ const Hero = () => {
           width={500}
           height={500}
         /> */}
-        <div className="mockup-window border bg-base-300" style={{boxShadow: "0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)"}}>
+        <div className="mockup-window bg-base-300" style={{boxShadow: "0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)"}}>
           <div className="flex justify-center p-2 rounded bg-base-200">
-            <Image
+            {/* <Image
               src="https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80"
               alt="Product Demo"
               className="w-full rounded-lg"
               priority={true}
               width={500}
               height={500}
-            />
-            {/* <VideoPlayer src="https://www.youtube.com/watch?v=31mM-OPYs9A" /> */}
+            /> */}
+            <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/tour-assets/FAQ_edit-8IbGB8sfQoUJX7jZijCnVgeiQECvDp.mp4" />
             {/* <iframe width="560" height="315" className=" w-full " src="https://www.youtube.com/embed/31mM-OPYs9A?si=s-Fbr4CKxVqQQ3bs" title="YouTube video player" frameBorder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerPolicy="strict-origin-when-cross-origin" allowFullScreen></iframe> */}
           </div>
         </div>
@@ -85,7 +85,7 @@ export default Hero;
 
 function Gift() {
   return (
-    <svg className="w-5 h-5 fill-secondary animate-pulse" viewBox="0 0 161 154" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
+    <svg className="w-5 h-5 offer animate-pulse" viewBox="0 0 161 154" fill="none" height="20" width="20" xmlns="http://www.w3.org/2000/svg">
       <g clipPath="url(#clip0_8_2399)">
         <path d="M13.9653 26.3929C13.3454 26.4007 12.7254 26.3891 12.1055 26.3781C10.9378 26.3371 9.76879 26.3561 
               8.60306 26.4349C4.24676 26.7979 2.47252 28.6135 2.27301 32.9093C1.97374 39.3929 1.71523 45.9857 1.46519 52.3619L1.1867 59.4195C1.16791 59.8841 

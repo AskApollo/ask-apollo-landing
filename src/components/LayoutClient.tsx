@@ -2,9 +2,7 @@
 
 import { ReactNode, useEffect } from "react";
 import { usePathname } from "next/navigation";
-// import { useSession } from "next-auth/react";
 import { Crisp } from "crisp-sdk-web";
-// import { SessionProvider } from "next-auth/react";
 import NextTopLoader from "nextjs-toploader";
 import { Toaster } from "react-hot-toast";
 import { Tooltip } from "react-tooltip";

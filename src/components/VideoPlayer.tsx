@@ -68,8 +68,8 @@ export const VideoPlayer = ({
               className={cn(
                 'relative z-10 inset-0 w-28 h-28 group-hover:scale-110',
                 variant === 'primary'
-                  ? 'stroke-primary-200/50 fill-primary-200'
-                  : 'stroke-secondary-200/50 fill-secondary-200',
+                  ? 'stroke-primary fill-primary'
+                  : 'stroke-base-300 fill-base-300',
               )}
             />
           </button>

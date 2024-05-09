@@ -1,22 +1,20 @@
 import { NextResponse, NextRequest } from "next/server";
-import { getServerSession } from "next-auth/next";
-import { authOptions } from "@/src/libs/next-auth";
 import connectMongo from "@/src/libs/mongoose";
 import { createCustomerPortal } from "@/src/libs/stripe";
 import User from "@/src/models/User";
 
 export async function POST(req: NextRequest) {
-  const session = await getServerSession(authOptions);
+  // const session = await getServerSession(authOptions);
 
-  if (session) {
+  // if (session) {
     try {
       await connectMongo();
 
       const body = await req.json();
 
-      const { id } = session.user;
+      // const { id } = session.user;
 
-      const user = await User.findById(id);
+      const user: any = null//await User.findById(id);
 
       if (!user?.customerId) {
         return NextResponse.json(
@@ -45,8 +43,8 @@ export async function POST(req: NextRequest) {
       console.error(e);
       return NextResponse.json({ error: e?.message }, { status: 500 });
     }
-  } else {
-    // Not Signed in
-    return NextResponse.json({ error: "Not signed in" }, { status: 401 });
-  }
+  // } else {
+  //   // Not Signed in
+  //   return NextResponse.json({ error: "Not signed in" }, { status: 401 });
+  // }
 }
