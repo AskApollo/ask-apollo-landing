@@ -1,27 +1,37 @@
+"use client"
+
 import config from "@/config";
 import ButtonCheckout from "./ButtonCheckout";
+import { useState } from "react";
 
 // <Pricing/> displays the pricing plans for your app
 // It's your Stripe config in config.js.stripe.plans[] that will be used to display the plans
 // <ButtonCheckout /> renders a button that will redirect the user to Stripe checkout called the /api/stripe/create-checkout API endpoint with the correct priceId
 
 const Pricing = () => {
+  const [yearly, setyearly] = useState(true)
+
   return (
     <section className="bg-base-200 overflow-hidden" id="pricing">
-      <button className="btn btn-accent btn-block mt-2">Create Anonymous User</button>
+      {/* <button className="btn btn-accent btn-block mt-2">Create Anonymous User</button>
       <button className="btn btn-accent btn-block mt-2">Associate Email</button>
-      <button className="btn btn-accent btn-block mt-2">Associate Password</button>
+      <button className="btn btn-accent btn-block mt-2">Associate Password</button> */}
       <div className="py-24 px-8 max-w-5xl mx-auto">
-        <div className="flex flex-col text-center w-full mb-20">
+        <div className="flex flex-col text-center w-full mb-20 items-center">
           <p className="font-medium text-primary mb-8">Pricing</p>
-          <h2 className="font-bold text-3xl lg:text-5xl tracking-tight">
-            Save hours of repetitive code and ship faster!
+          <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-8">
+            Select a plan that suits your needs
           </h2>
+          <div className=" flex gap-4 items-center">
+            <span className=" w-40">Monthly</span>
+            <input type="checkbox" className="toggle toggle-lg" checked={yearly} onChange={(e) => setyearly(e.target.checked)} />
+            <span className=" w-40">Yearly <br /><span className=" text-primary">(2 months free 🎉)</span></span>
+          </div>
         </div>
 
         <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8">
           {config.stripe.plans.map((plan) => (
-            <div key={plan.priceId} className="relative w-full max-w-lg">
+            <div key={plan.m_priceId} className="relative w-full max-w-lg">
               {plan.isFeatured && (
                 <div className="absolute top-0 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
                   <span
@@ -50,25 +60,54 @@ const Pricing = () => {
                   </div>
                 </div>
                 <div className="flex gap-2">
-                  {plan.priceAnchor && (
+                  {!plan.subscription && plan.m_priceAnchor && (
                     <div className="flex flex-col justify-end mb-[4px] text-lg ">
                       <p className="relative">
                         <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
                         <span className="text-base-content/80">
-                          ${plan.priceAnchor}
+                          ${plan.m_priceAnchor}
                         </span>
                       </p>
                     </div>
                   )}
-                  <p className={`text-5xl tracking-tight font-extrabold`}>
-                    ${plan.price}
-                  </p>
+                  {plan.subscription && !yearly && plan.m_priceAnchor && (
+                    <div className="flex flex-col justify-end mb-[4px] text-lg ">
+                      <p className="relative">
+                        <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
+                        <span className="text-base-content/80">
+                          ${plan.m_priceAnchor}
+                        </span>
+                      </p>
+                    </div>
+                  )}
+                  {plan.subscription && yearly && plan.y_priceAnchor && (
+                    <div className="flex flex-col justify-end mb-[4px] text-lg ">
+                      <p className="relative">
+                        <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
+                        <span className="text-base-content/80">
+                          ${plan.y_priceAnchor}
+                        </span>
+                      </p>
+                    </div>
+                  )}
+                  {!plan.subscription && <p className={`text-5xl tracking-tight font-extrabold`}>
+                    ${plan.m_price}
+                  </p>}
+                  {plan.subscription && !yearly && <p className={`text-5xl tracking-tight font-extrabold`}>
+                    ${plan.m_price}
+                  </p>}
+                  {plan.subscription && yearly && <p className={`text-5xl tracking-tight font-extrabold`}>
+                    ${plan.y_price}
+                  </p>}
                   <div className="flex flex-col justify-end mb-[4px]">
                     <p className="text-xs text-base-content/60 uppercase font-semibold">
                       USD
                     </p>
                   </div>
                 </div>
+                <p className="text-base-content/80 -mt-7">
+                  {plan.subscription ? (yearly ? "Yearly" : "Monthly") : "Pay once. Access forever."}
+                </p>
                 {plan.features && (
                   <ul className="space-y-2.5 leading-relaxed text-base flex-1">
                     {plan.features.map((feature, i) => (
@@ -92,10 +131,12 @@ const Pricing = () => {
                   </ul>
                 )}
                 <div className="space-y-2">
-                  <ButtonCheckout priceId={plan.priceId} />
+                  {!plan.subscription && <ButtonCheckout priceId={plan.m_priceId} mode="payment" label="Checkout"/>}
+                  {plan.subscription && !yearly && <ButtonCheckout priceId={plan.m_priceId} mode="subscription" label="Subscribe"/>}
+                  {plan.subscription && yearly && <ButtonCheckout priceId={plan.y_priceId} mode="subscription" label="Subscribe"/>}
 
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    Pay once. Access forever.
+                    {plan.subscription ? "Subscribe" : "Pay once. Access forever."}
                   </p>
                 </div>
               </div>

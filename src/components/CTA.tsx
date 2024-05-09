@@ -1,6 +1,7 @@
 import Image from "next/image";
 // import config from "@/config";
 import ButtonGradient from "./ButtonGradient";
+import Link from "next/link";
 
 const CTA = () => {
   return (
@@ -25,7 +26,7 @@ const CTA = () => {
           {/* <button className="btn btn-primary btn-wide">
             Get {config.appName}
           </button> */}
-          <ButtonGradient title="Get Access Now" />
+          <Link href="#pricing"><ButtonGradient title="Get Access Now" /></Link>
         </div>
       </div>
     </section>

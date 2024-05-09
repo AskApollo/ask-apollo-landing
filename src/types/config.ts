@@ -38,14 +38,19 @@ export interface ConfigProps {
   stripe: {
     plans: {
       isFeatured?: boolean;
-      priceId: string;
+      m_priceId: string;
+      y_priceId?: string;
       name: string;
       description?: string;
-      price: number;
-      priceAnchor?: number;
+      m_price: number;
+      y_price?: number;
+      m_priceAnchor?: number;
+      y_priceAnchor?: number;
       features: {
         name: string;
       }[];
+      subscription?: boolean;
+
     }[];
   };
   aws?: {

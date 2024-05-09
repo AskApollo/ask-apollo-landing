@@ -2,6 +2,10 @@ import Link from "next/link";
 import Image from "next/image";
 import config from "@/config";
 import logo from "@/public/assets/logo.svg";
+import { Anek_Latin } from "next/font/google";
+import { ArrowUpRightFromSquare } from "lucide-react";
+
+const anek = Anek_Latin({ subsets: ["latin"] })
 
 // Add the Footer to the bottom of your landing page and more.
 // The support link is connected to the config.js file. If there's no config.mailgun.supportEmail, the link won't be displayed.
@@ -25,9 +29,10 @@ const Footer = () => {
                 width={24}
                 height={24}
               />
-              <strong className="font-extrabold tracking-tight text-base md:text-lg">
+              {/* <strong className="font-extrabold tracking-tight text-base md:text-lg">
                 {config.appName}
-              </strong>
+              </strong> */}
+              <span className={`${anek.className} text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
             </Link>
 
             <p className="mt-3 text-sm text-base-content/80">
@@ -57,12 +62,12 @@ const Footer = () => {
                 <Link href="/#pricing" className="link link-hover">
                   Pricing
                 </Link>
-                <Link href="/blog" className="link link-hover">
-                  Blog
+                <Link href="https://blog.cyanarrow.com" target="_blank" className="link link-hover flex items-center">
+                  Blog <ArrowUpRightFromSquare className=" size-3 ml-2"></ArrowUpRightFromSquare>
                 </Link>
-                <a href="/#" target="_blank" className="link link-hover">
+                {/* <a href="/#" target="_blank" className="link link-hover">
                   Affiliates
-                </a>
+                </a> */}
               </div>
             </div>
 

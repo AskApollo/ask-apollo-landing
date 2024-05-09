@@ -49,7 +49,7 @@ export async function POST(req: NextRequest) {
         const customerId = session?.customer;
         const priceId = session?.line_items?.data[0]?.price.id;
         const userId = stripeObject.client_reference_id;
-        const plan = configFile.stripe.plans.find((p) => p.priceId === priceId);
+        const plan = configFile.stripe.plans.find((p) => p.m_priceId === priceId || p.y_priceId === priceId);
 
         if (!plan) break;
 

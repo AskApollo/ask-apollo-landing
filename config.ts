@@ -1,4 +1,4 @@
-import themes from "daisyui/src/theming/themes" ;
+import themes from "daisyui/src/theming/themes";
 import { ConfigProps } from "./src/types/config";
 
 const config = {
@@ -6,7 +6,7 @@ const config = {
   appName: "CyanArrow",
   // REQUIRED: a short description of your app for SEO tags (can be overwritten)
   appDescription:
-    "AI powered Chatbots and Ticketing System to boost your customer support. Save time and Reduce cost on your customer support.",
+    "AI powered Chatbots and Ticketing System to Boost efficiency, Save time and Reduce cost on customer support.",
   // REQUIRED (no https://, not trialing slash at the end, just the naked domain)
   domainName: "cyanarrow.com",
   crisp: {
@@ -20,47 +20,90 @@ const config = {
     plans: [
       {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
-        priceId:
+        m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1Niyy5AxyNprDp7iZIqEyD2h"
+            ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd"
             : "price_456",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter",
+        name: "Lifetime Access 🔥",
+        isFeatured: true,
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Perfect for small projects",
+        description: "Launch offer for the first 100 customers",
         // The price you want to display, the one user will be charged on Stripe.
-        price: 99,
+        m_price: 99,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        priceAnchor: 149,
+        m_priceAnchor: 169,
         features: [
-          {
-            name: "NextJS boilerplate",
-          },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
+          { name: "6,000 AI Credits" },
+          { name: "5 Chatbots", },
+          { name: "50,000,000 Characters training data", },
+          { name: "Unlimited Lead Forms" },
+          { name: "5 Ticket Forms" },
+          { name: "10 Webhooks" },
+          { name: "API Access" },
+          { name: "Custom Domain" },
+          { name: "White label" },
         ],
       },
       {
-        priceId:
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1O5KtcAxyNprDp7iftKnrrpw"
+            ? "price_1PEYaiSIKpTeZ6VR3NWyyDBB"
             : "price_456",
-        // This plan will look different on the pricing page, it will be highlighted. You can only have one plan with isFeatured: true
-        isFeatured: true,
-        name: "Advanced",
-        description: "You need more power",
-        price: 149,
-        priceAnchor: 299,
+        y_priceId:
+            process.env.NODE_ENV === "development"
+              ? "price_1PEYbHSIKpTeZ6VROhhUAUdP"
+              : "price_456",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Growth 🚀",
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        description: "All the essential features, run customer support at scale.",
+        // The price you want to display, the one user will be charged on Stripe.
+        m_price: 49,
+        y_price: 490,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        m_priceAnchor: 79,
+        y_priceAnchor: 790,
+        subscription: true,
         features: [
-          {
-            name: "NextJS boilerplate",
-          },
-          { name: "User oauth" },
-          { name: "Database" },
-          { name: "Emails" },
-          { name: "1 year of updates" },
-          { name: "24/7 support" },
+          { name: "6,000 AI Credits" },
+          { name: "5 Chatbots", },
+          { name: "50,000,000 Characters training data", },
+          { name: "Unlimited Lead Forms" },
+          { name: "5 Ticket Forms" },
+          { name: "10 Webhooks" },
+          { name: "API Access" },
+          { name: "Custom Domain" },
+          { name: "White label" },
+        ],
+      }, {
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        m_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PEYZySIKpTeZ6VRO4dNwRbt"
+            : "price_456",
+        y_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PEYc8SIKpTeZ6VR0zW76RnZ"
+            : "price_456",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Starter 🏍️",
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        description: "All the basic features, make customer support efficient.",
+        // The price you want to display, the one user will be charged on Stripe.
+        m_price: 19,
+        y_price: 190,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        m_priceAnchor: 29,
+        y_priceAnchor: 290,
+        subscription: true,
+        features: [
+          { name: "2,500 AI Credits" },
+          { name: "2 Chatbots", },
+          { name: "20,000,000 Characters training data", },
+          { name: "Unlimited Lead Forms" },
+          { name: "2 Ticket Forms" },
         ],
       },
     ],
@@ -75,13 +118,13 @@ const config = {
     // subdomain to use when sending emails, if you don't have a subdomain, just remove it. Highly recommended to have one (i.e. mg.yourdomain.com or mail.yourdomain.com)
     subdomain: "mg",
     // REQUIRED — Email 'From' field to be used when sending magic login links
-    fromNoReply: `ShipFast <noreply@mg.shipfa.st>`,
+    fromNoReply: `CyanArrow <noreply@mg.cyanarrow.com>`,
     // REQUIRED — Email 'From' field to be used when sending other emails, like abandoned carts, updates etc..
-    fromAdmin: `Marc at ShipFast <marc@mg.shipfa.st>`,
+    fromAdmin: `Anshul at CyanArrow <anshulkumar@mg.cyanarrow.com>`,
     // Email shown to customer if need support. Leave empty if not needed => if empty, set up Crisp above, otherwise you won't be able to offer customer support."
-    supportEmail: "marc@mg.shipfa.st",
+    supportEmail: "anshulkumar@cyanarrow.com",
     // When someone replies to supportEmail sent by the app, forward it to the email below (otherwise it's lost). If you set supportEmail to empty, this will be ignored.
-    forwardRepliesTo: "marc.louvion@gmail.com",
+    forwardRepliesTo: "anshulkumar@cyanarrow.com",
   },
   colors: {
     // REQUIRED — The DaisyUI theme to use (added to the main layout.js). Leave blank for default (light & dark mode). If you any other theme than light/dark, you need to add it in config.tailwind.js in daisyui.themes.
