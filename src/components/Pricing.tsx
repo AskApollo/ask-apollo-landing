@@ -132,8 +132,8 @@ const Pricing = () => {
                 )}
                 <div className="space-y-2">
                   {!plan.subscription && <ButtonCheckout priceId={plan.m_priceId} mode="payment" label="Checkout"/>}
-                  {plan.subscription && !yearly && <ButtonCheckout priceId={plan.m_priceId} mode="subscription" label="Subscribe"/>}
-                  {plan.subscription && yearly && <ButtonCheckout priceId={plan.y_priceId} mode="subscription" label="Subscribe"/>}
+                  {plan.subscription && !yearly && <ButtonCheckout priceId={plan.m_priceId} mode="subscription" label="Subscribe monthly"/>}
+                  {plan.subscription && yearly && <ButtonCheckout priceId={plan.y_priceId} mode="subscription" label="Subscribe yearly"/>}
 
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
                     {plan.subscription ? "Subscribe" : "Pay once. Access forever."}

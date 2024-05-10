@@ -42,7 +42,7 @@ const config = {
           { name: "10 Webhooks" },
           { name: "API Access" },
           { name: "Custom Domain" },
-          { name: "White label" },
+          { name: "White Label" },
         ],
       },
       {
@@ -75,7 +75,7 @@ const config = {
           { name: "10 Webhooks" },
           { name: "API Access" },
           { name: "Custom Domain" },
-          { name: "White label" },
+          { name: "White Label" },
         ],
       }, {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)

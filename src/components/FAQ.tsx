@@ -1,7 +1,9 @@
 "use client";
 
+import Link from "next/link";
 import { useRef, useState } from "react";
 import type { JSX } from "react";
+import config from "@/config";
 
 // <FAQ> component is a lsit of <Item> component
 // Just import the FAQ & add your FAQ content to the const faqList arrayy below.
@@ -14,21 +16,21 @@ interface FAQItemProps {
 const faqList: FAQItemProps[] = [
   {
     question: "What do I get exactly?",
-    answer: <div className="space-y-2 leading-relaxed">Loreum Ipseum</div>,
+    answer: <p className="space-y-2 leading-relaxed">Loreum Ipseum</p>,
   },
   {
     question: "Can I get a refund?",
     answer: (
-      <p>
+      <p className="space-y-2 leading-relaxed">
         Yes! You can request a refund within 7 days of your purchase. Reach out
-        by email.
+        by <Link href={`mailto:${config.mailgun.supportEmail}`} target="_blank" className=" underline">email</Link>.
       </p>
     ),
   },
   {
     question: "I have another question",
     answer: (
-      <div className="space-y-2 leading-relaxed">Cool, contact us by email</div>
+      <p className="space-y-2 leading-relaxed">Cool, contact us by email</p>
     ),
   },
 ];
