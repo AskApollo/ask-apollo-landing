@@ -11,9 +11,6 @@ body {
 progress::-webkit-progress-value {
   transition: 0.6s width ease-out;
 }
-.hard-shadow {
-  box-shadow: 0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)
-}
 
 @layer base {
   .btn-gradient {

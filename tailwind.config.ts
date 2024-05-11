@@ -71,29 +71,35 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["bumblebee"], 
-          primary: "#22d3ee", 
-          ".tech-used": { "fill": "black" }, 
+          ...require("daisyui/src/theming/themes")["bumblebee"],
+          primary: "#22d3ee",
+          ".tech-used": { "fill": "black" },
           ".offer": {
-            "--tw-text-opacity": "1", 
-            "color": "violet", 
+            "--tw-text-opacity": "1",
+            "color": "violet",
             "fill": "violet"
+          },
+          ".hard-shadow": {
+            "box-shadow": "0px 29px 52px 0px rgba(0,0,0,.4),22px 25px 16px 0px rgba(0,0,0,.2)"
           }
         }
-      }, 
+      },
       // "dark",
       {
         dark: {
-          ...require("daisyui/src/theming/themes")["coffee"], 
-          primary: "#22d3ee", 
-          ".tech-used": { "fill": "white" }, 
-          ".offer": { 
-            "--tw-text-opacity": "1", 
+          ...require("daisyui/src/theming/themes")["coffee"],
+          primary: "#22d3ee",
+          ".tech-used": { "fill": "white" },
+          ".offer": {
+            "--tw-text-opacity": "1",
             "color": "var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))",
-            "fill": "var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))" 
+            "fill": "var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))"
+          },
+          ".hard-shadow": {
+            "box-shadow": "0px 29px 52px 0px rgba(255,255,255,.3)"
           }
         }
-      }, 
+      },
       // "luxury", 
       // // {winter: {...require("daisyui/src/theming/themes")["winter"], primary: "#22d3ee"}}, 
       // {cupcake: {...require("daisyui/src/theming/themes")["cupcake"], primary: "#22d3ee"}},
