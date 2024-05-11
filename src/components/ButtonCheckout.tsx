@@ -33,7 +33,7 @@ const ButtonCheckout = ({
       //   }
       // );
 
-      window.location.href = `https://app.cyanarrow.com?pid=${priceId}&pm=${mode}`;
+      window.location.href = `http://localhost:3000?view=sign_up&pid=${priceId}&pm=${mode}`;
     } catch (e) {
       console.error(e);
     }

@@ -22,8 +22,9 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd"
-            : "price_456",
+            ? "price_1PEmoRSIKpTeZ6VRVfoZLpM4"
+            // ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd" //usd
+            : "price_1PEmoRSIKpTeZ6VRVfoZLpM4",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Lifetime Access 🔥",
         isFeatured: true,
@@ -49,12 +50,12 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEYaiSIKpTeZ6VR3NWyyDBB"
-            : "price_456",
+            ? "price_1PEmpeSIKpTeZ6VReMPFpKzr"
+            : "price_1PEmpeSIKpTeZ6VReMPFpKzr",
         y_priceId:
-            process.env.NODE_ENV === "development"
-              ? "price_1PEYbHSIKpTeZ6VROhhUAUdP"
-              : "price_456",
+          process.env.NODE_ENV === "development"
+            ? "price_1PEmq0SIKpTeZ6VRfuhQCCme"
+            : "price_1PEmq0SIKpTeZ6VRfuhQCCme",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Growth 🚀",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
@@ -81,12 +82,12 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEYZySIKpTeZ6VRO4dNwRbt"
-            : "price_456",
+            ? "price_1PEmqzSIKpTeZ6VR9mAhrFJI"
+            : "price_1PEmqzSIKpTeZ6VR9mAhrFJI",
         y_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEYc8SIKpTeZ6VR0zW76RnZ"
-            : "price_456",
+            ? "price_1PEmrKSIKpTeZ6VROMY1RQZh"
+            : "price_1PEmrKSIKpTeZ6VROMY1RQZh",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter 🏍️",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
