@@ -30,7 +30,7 @@ const Hero = () => {
         <h1 className={cn( bgr.variable, "font-sans font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4")}>
           <span className=" flex !mb-2 ">Save Time & Reduce Costs with{" "}{" "}</span>
           <span className=" relative whitespace-nowrap ">
-            <span className="absolute bg-[var(--fallback-bc,oklch(var(--bc)/1))] -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
+            <span className="absolute bg-base-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
             <span className="relative text-base-100">AI Support Agent</span>
           </span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
@@ -72,7 +72,7 @@ const Hero = () => {
               width={500}
               height={500}
             /> */}
-            <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/tour-assets/FAQ_edit-8IbGB8sfQoUJX7jZijCnVgeiQECvDp.mp4" />
+            <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/CA%20Landing%20Intro-4fK3EueA6l1vZ49QYV4eOLboEthDFN.mp4" />
           </div>
         </div>
       </div>

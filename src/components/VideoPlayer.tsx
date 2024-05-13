@@ -63,7 +63,7 @@ export const VideoPlayer = ({
                 'w-full h-full flex items-center justify-center absolute inset-0 bg-gradient-to-tr group',
                 variant === 'primary'
                   ? 'from-primary/30 to-black/70'
-                  : 'from-neutral/40 to-black/70',
+                  : 'from-base-content/40 to-black/70',
               )}
             >
               <PlayIcon
@@ -71,7 +71,7 @@ export const VideoPlayer = ({
                   'relative z-20 inset-0 w-28 h-28 group-hover:scale-110',
                   variant === 'primary'
                     ? 'stroke-primary fill-primary'
-                    : 'stroke-[var(--fallback-bc,oklch(var(--bc)/1))] fill-[var(--fallback-bc,oklch(var(--bc)/1))] opacity-70',
+                    : 'stroke-base-300 fill-base-300 opacity-70',
                 )}
               />
             </button>
