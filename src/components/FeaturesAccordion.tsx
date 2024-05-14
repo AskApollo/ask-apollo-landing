@@ -79,12 +79,12 @@ const Item = ({
         }}
         aria-expanded={isOpen}
       >
-        <span className={`duration-100 ${isOpen ? "text-primary" : ""}`}>
+        <span className={`duration-100 ${isOpen ? "text-accent" : ""}`}>
           {svg}
         </span>
         <span
           className={`flex-1 text-base-content ${
-            isOpen ? "text-primary font-semibold" : ""
+            isOpen ? "!text-accent font-semibold" : ""
           }`}
         >
           <h3 className="inline">{title}</h3>
@@ -153,7 +153,7 @@ const FeaturesAccordion = () => {
 
   return (
     <section
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-300 "
+      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base  "
       id="features"
     >
       <div className="px-8">

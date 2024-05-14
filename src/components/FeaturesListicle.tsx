@@ -2,7 +2,7 @@
 
 import { useState, useEffect, useRef } from "react";
 import type { JSX } from "react";
-import {BotMessageSquare, FileQuestion, PencilRuler, PlayCircle, PlugZap, Ticket, UsersRound, Webhook} from "lucide-react";
+import {BotMessageSquare, FileQuestion, PencilRuler, PlugZap, Ticket, UsersRound, Webhook} from "lucide-react";
 
 // List of features to display:
 // - name: name of the feature
