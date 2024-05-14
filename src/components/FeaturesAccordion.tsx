@@ -27,9 +27,9 @@ const features = [
     title: "Upload data",
     description:
       "Upload your data for AI training. You can add data from Websites, Documents(pdf, docx, txt). Or simply create FAQs with our powerful editor. Then simply start AI training.",
-    // type: "video",
-    // path: "https://d3m8mk7e1mf7xn.cloudfront.net/app/newsletter.webm",
-    // format: "video/webm",
+    type: "video",
+    path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
+    format: "video/mp4",
     svg: (
       <Upload className=" size-8" />
     ),
@@ -38,9 +38,9 @@ const features = [
     title: "Configure",
     description:
       "Personalize the appearance of the chatbot and ticket forms. Add the datasources that you uploaded from website/documents/FAQs to the chatbot and ticketing system. Add the allowed domains.",
-    // type: "image",
-    // path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    // alt: "A computer",
+    type: "image",
+    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    alt: "A computer",
     svg: (
       <Database className=" size-8 " />
     ),
@@ -110,7 +110,7 @@ const Item = ({
 // Video are set to autoplay for best UX.
 const Media = ({ feature }: { feature: Feature }) => {
   const { type, path, format, alt } = feature;
-  const style = "rounded-2xl aspect-square w-full sm:w-[26rem]";
+  const style = "rounded-2xl w-full sm:w-[26rem]";
   const size = {
     width: 500,
     height: 500,
@@ -119,7 +119,7 @@ const Media = ({ feature }: { feature: Feature }) => {
   if (type === "video") {
     return (
       <video
-        className={style}
+        className="rounded-2xl aspect-auto bg-base-content w-full sm:w-[26rem] border"
         autoPlay
         muted
         loop
@@ -159,7 +159,7 @@ const FeaturesAccordion = () => {
       <div className="px-8">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
           Quick setup in {" "}<br className=" max-md:block hidden"/>
-          <span className="bg-base-content text-base-300 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">
+          <span className="bg-base-content text-base-100 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">
             3 Simple steps
           </span>
         </h2>

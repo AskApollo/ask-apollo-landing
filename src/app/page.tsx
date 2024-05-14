@@ -63,7 +63,6 @@ import WithWithout from '../components/WithWithout';
 import TechUsed from '../components/TechUsed';
 import FounderStory from '../components/FounderStory';
 import LiveDemo from '../components/Demo';
-import Script from 'next/script';
 
 export default function Home() {
   return (
