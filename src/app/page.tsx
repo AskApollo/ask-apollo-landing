@@ -48,7 +48,7 @@ import { Suspense } from 'react'
 import Header from "@/src/components/Header";
 import Hero from "@/src/components/Hero";
 import Problem from "@/src/components/Problem";
-// import FeaturesAccordion from "@/src/components/FeaturesAccordion";
+import FeaturesAccordion from "@/src/components/FeaturesAccordion";
 import Pricing from "@/src/components/Pricing";
 import FAQ from "@/src/components/FAQ";
 import CTA from "@/src/components/CTA";
@@ -76,7 +76,7 @@ export default function Home() {
         <TechUsed />
         <Problem />
         <WithWithout />
-        {/* <FeaturesAccordion /> */}
+        <FeaturesAccordion />
         <FeaturesListicle />
         <LiveDemo />
         <Pricing />
