@@ -71,7 +71,7 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["bumblebee"],
+          ...require("daisyui/src/theming/themes")["winter"],
           primary: "#22d3ee",
           ".tech-used": { "fill": "black" },
           ".offer": {
@@ -87,7 +87,7 @@ module.exports = {
       // "dark",
       {
         dark: {
-          ...require("daisyui/src/theming/themes")["night"],
+          ...require("daisyui/src/theming/themes")["synthwave"],
           primary: "#22d3ee",
           ".tech-used": { "fill": "white" },
           ".offer": {
