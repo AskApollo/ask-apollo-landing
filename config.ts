@@ -33,7 +33,7 @@ const config = {
         // The price you want to display, the one user will be charged on Stripe.
         m_price: 99,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        m_priceAnchor: 169,
+        m_priceAnchor: 790,
         features: [
           { name: "6,000 AI Credits" },
           { name: "5 Chatbots", },
