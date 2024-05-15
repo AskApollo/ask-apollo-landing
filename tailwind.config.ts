@@ -87,7 +87,7 @@ module.exports = {
       // "dark",
       {
         dark: {
-          ...require("daisyui/src/theming/themes")["coffee"],
+          ...require("daisyui/src/theming/themes")["night"],
           primary: "#22d3ee",
           ".tech-used": { "fill": "white" },
           ".offer": {
