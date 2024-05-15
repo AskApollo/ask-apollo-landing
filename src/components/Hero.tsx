@@ -47,7 +47,7 @@ const Hero = () => {
           <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
             <Gift />
             <span>
-              <span className="offer">$99 Lifetime deal</span> for the first 100 customers
+              <span className="offer">$99 1 Year Access</span> for the first 100 customers
             </span>
           </p>
         </Link>

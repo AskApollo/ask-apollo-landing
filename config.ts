@@ -24,9 +24,9 @@ const config = {
           process.env.NODE_ENV === "development"
             ? "price_1PEmoRSIKpTeZ6VRVfoZLpM4"
             // ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd" //usd
-            : "price_1PEmoRSIKpTeZ6VRVfoZLpM4",
+            : "price_1PGknNSIKpTeZ6VRnMUkySa1",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Lifetime Access 🔥",
+        name: "1 Year Access 🔥",
         isFeatured: true,
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
         description: "Launch offer for the first 100 customers",
@@ -51,11 +51,11 @@ const config = {
         m_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PEmpeSIKpTeZ6VReMPFpKzr"
-            : "price_1PEmpeSIKpTeZ6VReMPFpKzr",
+            : "price_1PGknISIKpTeZ6VRJ6dU7Uzv",
         y_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PEmq0SIKpTeZ6VRfuhQCCme"
-            : "price_1PEmq0SIKpTeZ6VRfuhQCCme",
+            : "price_1PGknISIKpTeZ6VRn2nyhIeG",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Growth 🚀",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
@@ -83,11 +83,11 @@ const config = {
         m_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PEmqzSIKpTeZ6VR9mAhrFJI"
-            : "price_1PEmqzSIKpTeZ6VR9mAhrFJI",
+            : "price_1PGknCSIKpTeZ6VR0QzfahX2",
         y_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PEmrKSIKpTeZ6VROMY1RQZh"
-            : "price_1PEmrKSIKpTeZ6VROMY1RQZh",
+            : "price_1PGknCSIKpTeZ6VRPObnT9wY",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter 🏍️",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
