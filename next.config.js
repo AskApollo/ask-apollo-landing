@@ -9,6 +9,7 @@ const nextConfig = {
       "images.unsplash.com",
       "logos-world.net",
       "d0.awsstatic.com",
+      "api.producthunt.com",
     ],
   },
 };
