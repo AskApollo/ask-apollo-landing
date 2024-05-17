@@ -71,7 +71,7 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["winter"],
+          ...require("daisyui/src/theming/themes")["fantasy"],
           primary: "#22d3ee",
           ".tech-used": { "fill": "black" },
           ".offer": {
