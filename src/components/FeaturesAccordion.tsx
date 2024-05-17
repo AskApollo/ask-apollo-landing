@@ -153,10 +153,10 @@ const FeaturesAccordion = () => {
 
   return (
     <section
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base  "
+      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-200  "
       id="features"
     >
-      <div className="px-8">
+      <div className="px-8 max-w-7xl">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
           Quick setup in {" "}<br className=" max-md:block hidden"/>
           <span className="bg-base-content text-base-100 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">

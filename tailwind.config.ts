@@ -87,8 +87,8 @@ module.exports = {
       // "dark",
       {
         dark: {
-          ...require("daisyui/src/theming/themes")["synthwave"],
-          primary: "#22d3ee",
+          ...require("daisyui/src/theming/themes")["business"],
+          // primary: "#25d1da",
           ".tech-used": { "fill": "white" },
           ".offer": {
             "--tw-text-opacity": "1",
@@ -97,7 +97,8 @@ module.exports = {
           },
           ".hard-shadow": {
             "box-shadow": "0px 29px 52px 0px rgba(255,255,255,.3)"
-          }
+          },
+          "--rounded-btn": "0.5rem"
         }
       },
       // "luxury", 
