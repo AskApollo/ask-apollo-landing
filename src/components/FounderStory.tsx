@@ -6,24 +6,28 @@ export default function FounderStory() {
     return (
         <section className="bg-base-100">
             <div className="py-24 max-md:px-8 max-w-3xl mx-auto">
+                <div className="flex flex-col text-center w-full mb-8">
+                    <h2 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 md:mb-12 ">
+                        Meet the Founder: Anshul{`'`}s Journey
+                    </h2>
+                </div>
                 <div className="leading-relaxed text-base-content/80 mb-12 max-w-xl mx-auto">
                     <Image alt="Anshul Kumar - Dreamer, Builder" loading="lazy" width="200" height="200"
                         className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-8 mb-8 object-center object-cover"
                         src="/assets/mine.png" />
                     <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Anshul 👋</p>
                     <p className="mb-5">
-                        I have worked for big corporations for well over a decade.
-                        I{`'`}ve extensive experience in Business Sales and Support software development.
-                        I{`'`}ve worked with 20+ clients from various industries( Banking, Healthcare, Education) in my career.
+                        For over a decade, I worked with big corporations, gaining extensive experience in Business Sales and Support software development.
+                        During my career, I’ve had the pleasure of working with 20+ clients across various industries, including Banking, Healthcare, and Education.
                     </p>
                     <p className="mb-5">
-                        After feeling not so fulfilled in my job, in 2022, I left my corporate job and started my Solopreneur journey.
-                        As I had experience in development of Customer support software, CyanArrow is my attemp to help businesses serve their customers better.
+                        In 2022, seeking greater fulfillment, I left my corporate job to embark on my solopreneur journey.
+                        Leveraging my expertise in customer support software development, I founded CyanArrow to help businesses provide exceptional customer service.
                     </p>
                     <p className=" flex gap-2 mb-5 items-start">Feel free to reachout to me at
-                        <Link href="https://www.linkedin.com/in/anshul-kumar-812b9a18/" target="_blank"  rel="noreferrer" title="LinkedIn"><Linkedin className=" size-5" /></Link> 
-                        or 
-                        <Link href="https://twitter.com/AnshCooll" target="_blank"  rel="noreferrer" title="X (Twitter)"><XTwitter /></Link>
+                        <Link href="https://www.linkedin.com/in/anshul-kumar-812b9a18/" target="_blank" rel="noreferrer" title="LinkedIn"><Linkedin className=" size-5" /></Link>
+                        or
+                        <Link href="https://twitter.com/AnshCooll" target="_blank" rel="noreferrer" title="X (Twitter)"><XTwitter /></Link>
                     </p>
                     {/* <ul className="list-inside list-decimal space-y-1.5 ml-5 mb-5">
                         <li>

@@ -418,17 +418,14 @@ const FeaturesListicle = () => {
     <section className="py-24" id="features">
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
-          <p className="text-accent font-medium text-sm font-mono mb-3">
-            {/* Pure decoration, you can remove it */}
-            {/* const launch_time = &quot;Today&quot;; */}
-          </p>
+          <p className="font-medium text-accent mb-8">Discover the power of CyanArrow</p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
-            Supercharge your customer support, save time, make $
+            Supercharge Your Support, Save Time, Boost Profits
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            CyanArrow is AI powered customer support ecosystem, that increases efficiency, saves time, makes your customers happy and ultimately makes you more $
+            CyanArrow’s AI-powered customer support ecosystem enhances efficiency, saves time, delights your customers, and ultimately boosts your profits
           </div>
         </div>
       </div>

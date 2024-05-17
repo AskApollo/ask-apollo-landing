@@ -1,3 +1,5 @@
+import { ArrowBigDownDashIcon } from "lucide-react";
+
 export const Arrow = ({ extraStyle }: { extraStyle: string }) => {
   return (
     <svg
@@ -46,13 +48,13 @@ const Problem = () => {
         <h2 className="max-w-3xl mx-auto font-extrabold text-4xl md:text-5xl tracking-tight mb-6 md:mb-8">
           {/* 80% of startups fail because founders never launch */}
           {/* 50% Customers actively seek alternative providers after just 1 poor support experience */}
-          50% of Customers switch to other providers after one bad support experience
+          50% of Customers Leave After One Bad Support Experience
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Poor customer service can cause customers to churn, or stop buying
+          Poor customer service drives customers away, hurting your bottom line
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6">
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
           <Step emoji="👨‍💻" text="3+ months training for customer support" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
@@ -63,6 +65,41 @@ const Problem = () => {
 
           <Step emoji="😔" text="Unhappy customers leave you" />
         </div>
+
+        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 max-w-3xl mx-auto mb-12">
+          <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
+            <h3 className="font-bold text-lg mb-4">
+              And this has very high cost
+            </h3>
+
+            <ul className="list-disc list-inside space-y-1.5 text-start ">
+              {/* Pains the user is experiencing by not using your product */}
+              {[
+                <span key={1}><strong>Lost Revenue:</strong> Each lost customer is a hit to your profits.</span>,
+                <span key={2}><strong>Brand Damage</strong>: Negative experiences spread quickly, damaging your reputation.</span>,
+                <span key={3}><strong>Customer Acquisition Costs:</strong> It{`'`}s more expensive to acquire new customers than to retain existing ones.</span>,
+              ].map((item, index) => (
+                <li key={index} className="flex gap-2 items-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    viewBox="0 0 16 16"
+                    fill="currentColor"
+                    className="w-4 h-4 shrink-0 opacity-75"
+                  >
+                    <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
+                  </svg>
+                  {item}
+                </li>
+              ))}
+            </ul>
+          </div>
+        </div>
+
+        <div className=" flex flex-col gap-4 mx-auto">
+          <p className=" text-lg">Well, there is a solution for this situation</p>
+          <ArrowBigDownDashIcon className=" size-10 animate-bounce text-success mx-auto" />
+        </div>
+
       </div>
     </section>
   );

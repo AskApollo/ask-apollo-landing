@@ -20,8 +20,12 @@ const Pricing = () => {
         <div className="flex flex-col text-center w-full mb-20 items-center">
           <p className="font-medium text-primary mb-8">Pricing</p>
           <h2 className="font-bold text-3xl lg:text-5xl tracking-tight mb-8">
-            Select a plan that suits your needs
+            Choose the Perfect Plan for Your Business
           </h2>
+          <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
+            {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
+            Find the right plan that fits your business needs and budget
+          </div>
           <div className=" flex gap-4 items-center">
             <span className=" w-40">Monthly</span>
             <input type="checkbox" className="toggle toggle-lg" checked={yearly} onChange={(e) => setyearly(e.target.checked)} />

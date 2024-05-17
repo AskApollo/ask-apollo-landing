@@ -32,15 +32,15 @@ const Hero = () => {
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=457583&theme=light" alt="CyanArrow - Save&#0032;Time&#0032;&#0038;&#0032;Reduce&#0032;Costs&#0032;with&#0032;AI&#0032;Support&#0032;Agent | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" className=" max-lg:scale-[0.6] lg:scale-[0.85]" />
         </a>
         <h1 className={cn( bgr.variable, "font-sans font-extrabold text-4xl lg:text-6xl text-accent tracking-tight md:-mb-4")}>
-          <span className=" flex !mb-2 ">Save Time & Reduce Costs with{" "}{" "}</span>
+          <span className=" flex !mb-2 ">Save Time & Cut Costs with{" "}{" "}</span>
           <span className=" relative whitespace-nowrap ">
             <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
-            <span className="relative text-accent">AI Support Agent</span>
+            <span className="relative text-accent">AI Support</span>
           </span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
-          Supercharge your customer support with AI Chatbots and Ticketing System
+          Supercharge Your Customer Service with AI Chatbots & Ticketing
           {/* All While Saving Time and Reducing Costs */}
         </p>
         {/* <button className="btn btn-primary btn-lg ">
@@ -48,7 +48,7 @@ const Hero = () => {
         </button> */}
         <Link href="#pricing" className=" space-y-4 ">
           {/* <ButtonGradient title="Get Access Now" /> */}
-          <button type="button" className="btn btn-primary">Get access now</button>
+          <button type="button" className="btn btn-primary">Get started now</button>
           <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
             <Gift />
             <span>

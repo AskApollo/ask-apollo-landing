@@ -10,17 +10,17 @@ const WithWithout = () => {
       <div className="max-w-5xl mx-auto px-8 py-16 md:py-32 ">
         <h2 className="text-center font-extrabold text-3xl md:text-5xl tracking-tight mb-12 md:mb-20">
           {/* Tired of managing customer support and resolving support tickets? */}
-          Improve customer support experience!
+          Enhance Your Customer Support with CyanArrow
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12">
-          <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
+          {/* <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
             <h3 className="font-bold text-lg mb-4">
               Websites without CyanArrow
             </h3>
 
             <ul className="list-disc list-inside space-y-1.5 ">
-              {/* Pains the user is experiencing by not using your product */}
+              {/* Pains the user is experiencing by not using your product 
               {[
                 "Limited availability for live support",
                 "Long wait time for customers",
@@ -41,23 +41,28 @@ const WithWithout = () => {
                 </li>
               ))}
             </ul>
-          </div>
+          </div> */}
 
-          <div className="bg-success/20 text-success p-8 md:p-12 rounded-lg w-full">
+          <div className="bg-success/20 text-success p-8 md:p-12 rounded-lg w-full text-center max-w-3xl">
             <h3 className="font-bold text-lg mb-4">
               Websites + CyanArrow
             </h3>
 
-            <ul className="list-disc list-inside space-y-1.5 ">
+            <ul className="list-disc list-inside space-y-1.5 text-start">
               {/* Features of your product fixing the pain (try to match each with/withot lines) */}
               {[
-                "Provide 24/7/365 quality customer support",
-                `Instant reply to customer FAQs with 95% accuracy`,
-                "Save 10+ hours on customer support and queries",
-                "1 support staff can handle workload of 10",
-                "Reduced number of tickets",
+                <span key={1}><strong>24/7/365 Quality Support:</strong> Ensure your customers always get the help they need, anytime.</span>,
+                <span key={2}><strong>Instant FAQ Responses:</strong> Deliver accurate answers with 95% precision, instantly.</span>,
+                <span key={3}><strong>Save Time and Resources:</strong> Cut down over 10 hours per week on support tasks.</span>,
+                <span key={4}><strong>Boost Efficiency:</strong> Enable one support agent to manage the workload of ten.</span>,
+                <span key={5}><strong>Reduce Ticket Volume:</strong> Minimize the number of support tickets with proactive solutions.</span>,
+                // "Provide 24/7/365 quality customer support",
+                // `Instant reply to customer FAQs with 95% accuracy`,
+                // "Save 10+ hours on customer support and queries",
+                // "1 support staff can handle workload of 10",
+                // "Reduced number of tickets",
               ].map((item, index) => (
-                <li key={index} className="flex gap-2 items-center">
+                <li key={index} className="flex gap-2 items-center text-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"

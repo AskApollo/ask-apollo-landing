@@ -35,20 +35,20 @@ const features = [
     ),
   },
   {
-    title: "Configure",
+    title: "Customize Your Chatbot and Ticketing System",
     description:
-      "Personalize the appearance of the chatbot and ticket forms. Add the datasources that you uploaded from website/documents/FAQs to the chatbot and ticketing system. Add the allowed domains.",
-    type: "image",
-    path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
-    alt: "A computer",
+      "Personalize the appearance of the chatbot and ticket forms to fit your specific needs. ",
+    // type: "image",
+    // path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
+    // alt: "A computer",
     svg: (
       <Database className=" size-8 " />
     ),
   },
   {
-    title: "Embed",
+    title: "Launch and Monitor",
     description:
-      "Simply copy the given scripts from the chatbot/ticket form to your website. And thats it.",
+      "Simply copy the embed scripts from the chatbot/ticket form and add to your website. And thats it. Monitor conversations, captured leads and raised tickets.",
     svg: (
       <Code2 className=" size-8 " />
     ),
@@ -158,9 +158,9 @@ const FeaturesAccordion = () => {
     >
       <div className="px-8 max-w-7xl">
         <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
-          Quick setup in {" "}<br className=" max-md:block hidden"/>
+          Get Started in {" "}<br className=" max-md:block hidden"/>
           <span className="bg-base-content text-base-100 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">
-            3 Simple steps
+            Just 3 Easy Steps
           </span>
         </h2>
         <div className=" flex flex-col md:flex-row gap-12 md:gap-24">

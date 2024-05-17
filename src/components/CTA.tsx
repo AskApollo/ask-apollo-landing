@@ -16,17 +16,18 @@ const CTA = () => {
       <div className="relative hero-content text-center text-neutral-content p-8">
         <div className="flex flex-col items-center max-w-xl p-8 md:p-0">
           <h2 className="font-bold text-3xl md:text-5xl tracking-tight mb-8 md:mb-12">
-            Upgrade your customer support today!
+            Upgrade Your Customer Support Today!
           </h2>
           <p className="text-lg opacity-80 mb-12 md:mb-16">
             {/* Power up your customer support with AI and keep your customers happy */}
-            Enhance your customer support with AI, ensure customer satisfaction
+            Enhance your customer service with AI and ensure customer satisfaction. <br/>
+            Don’t wait – transform your support experience now.
           </p>
 
           {/* <button className="btn btn-primary btn-wide">
             Get {config.appName}
           </button> */}
-          <Link href="#pricing"><ButtonGradient title="Get Access Now" /></Link>
+          <Link href="#pricing"><ButtonGradient title="Get Started Now" /></Link>
         </div>
       </div>
     </section>
