@@ -445,7 +445,7 @@ const FeaturesListicle = () => {
                 className={`duration-100 ${
                   featureSelected === feature.name
                     ? "text-accent"
-                    : "text-base-content/30 group-hover:text-base-content/50"
+                    : "text-base-content group-hover:text-base-content/50"
                 }`}
               >
                 {feature.svg}
@@ -454,7 +454,7 @@ const FeaturesListicle = () => {
                 className={`font-semibold text-sm ${
                   featureSelected === feature.name
                     ? "text-accent"
-                    : "text-base-content/50"
+                    : "text-base-content"
                 }`}
               >
                 {feature.name}
