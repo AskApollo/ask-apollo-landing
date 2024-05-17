@@ -29,7 +29,7 @@ const Hero = () => {
         </a> */}
         <a href="https://www.producthunt.com/posts/cyanarrow?utm_source=badge-featured&utm_medium=badge&utm_souce=badge-cyanarrow" target="_blank" className=" -mb-4 md:-mb-6 group"
           title="Product Hunt link">
-          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=457583&theme=light" alt="CyanArrow - Save&#0032;Time&#0032;&#0038;&#0032;Reduce&#0032;Costs&#0032;with&#0032;AI&#0032;Support&#0032;Agent | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" />
+          <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=457583&theme=light" alt="CyanArrow - Save&#0032;Time&#0032;&#0038;&#0032;Reduce&#0032;Costs&#0032;with&#0032;AI&#0032;Support&#0032;Agent | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" className=" max-lg:scale-[0.6] lg:scale-[0.85]" />
         </a>
         <h1 className={cn( bgr.variable, "font-sans font-extrabold text-4xl lg:text-6xl tracking-tight md:-mb-4")}>
           <span className=" flex !mb-2 ">Save Time & Reduce Costs with{" "}{" "}</span>
