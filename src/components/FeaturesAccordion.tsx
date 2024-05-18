@@ -87,7 +87,7 @@ const Item = ({
             isOpen ? "!text-accent font-semibold" : ""
           }`}
         >
-          <h3 className="inline">{title}</h3>
+          <h3 className="inline text-base">{title}</h3>
         </span>
       </button>
 
@@ -119,7 +119,7 @@ const Media = ({ feature }: { feature: Feature }) => {
   if (type === "video") {
     return (
       <video
-        className="rounded-2xl aspect-auto bg-base-content w-full sm:w-[26rem] border"
+        className="rounded-2xl aspect-auto bg-base-100 w-full sm:w-[26rem] border"
         autoPlay
         muted
         loop
@@ -153,11 +153,11 @@ const FeaturesAccordion = () => {
 
   return (
     <section
-      className="py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-200  "
+      className=" flex justify-center py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-200  "
       id="features"
     >
-      <div className="px-8 max-w-7xl">
-        <h2 className="font-extrabold text-4xl lg:text-6xl tracking-tight mb-12 md:mb-24">
+      <div className=" flex flex-col px-8 max-w-5xl items-center">
+        <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-12 md:mb-24 max-w-3xl">
           Get Started in {" "}<br className=" max-md:block hidden"/>
           <span className="bg-base-content text-base-100 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">
             Just 3 Easy Steps
