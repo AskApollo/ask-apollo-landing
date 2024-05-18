@@ -71,7 +71,7 @@ module.exports = {
     themes: [
       {
         light: {
-          ...require("daisyui/src/theming/themes")["fantasy"],
+          ...require("daisyui/src/theming/themes")["cupcake"],
           primary: "#22d3ee",
           ".tech-used": { "fill": "black" },
           ".offer": {
@@ -98,7 +98,7 @@ module.exports = {
           ".hard-shadow": {
             "box-shadow": "0px 29px 52px 0px rgba(255,255,255,.3)"
           },
-          "--rounded-btn": "0.5rem"
+          "--rounded-btn": "1.9rem"
         }
       },
       // "luxury", 

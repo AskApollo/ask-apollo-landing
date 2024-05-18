@@ -110,7 +110,7 @@ const Pricing = () => {
                   </div>
                 </div>
                 <p className="text-base-content/80 -mt-7">
-                  {plan.subscription ? (yearly ? "Yearly" : "Monthly") : "Pay once. Access forever."}
+                  {plan.subscription ? (yearly ? "Yearly" : "Monthly") : "1 Year Access"}
                 </p>
                 {plan.features && (
                   <ul className="space-y-2.5 leading-relaxed text-base flex-1">
@@ -140,7 +140,7 @@ const Pricing = () => {
                   {plan.subscription && yearly && <ButtonCheckout priceId={plan.y_priceId} mode="subscription" label="Subscribe yearly"/>}
 
                   <p className="flex items-center justify-center gap-2 text-sm text-center text-base-content/80 font-medium relative">
-                    {plan.subscription ? "Subscribe" : "Pay once. Access forever."}
+                    {plan.subscription ? "Subscribe" : "1 Year Access"}
                   </p>
                 </div>
               </div>

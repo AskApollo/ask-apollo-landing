@@ -1,13 +1,14 @@
 // import Image from "next/image";
 import TestimonialsAvatars from "./TestimonialsAvatars";
 // import config from "@/config";
-import { Bricolage_Grotesque } from "next/font/google";
+import {  Amaranth, Yeseva_One, Libre_Baskerville } from "next/font/google";
 import ButtonGradient from "./ButtonGradient";
 import Link from "next/link";
 import { VideoPlayer } from "./VideoPlayer";
 import { cn } from "../libs/utils";
 import Image from "next/image";
-const bgr = Bricolage_Grotesque({ subsets: ["latin"], display: "swap", adjustFontFallback: false, variable: '--font-brigro' });
+// const bgr = Bricolage_Grotesque({ subsets: ["latin"], display: "swap", adjustFontFallback: false, variable: '--font-brigro' });
+const bgr1 = Libre_Baskerville({ subsets: ["latin"], display: "swap", adjustFontFallback: false, variable: '--font-brigro',weight: "400" });
 
 const Hero = () => {
   return (
@@ -31,11 +32,11 @@ const Hero = () => {
           title="Product Hunt link">
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=457583&theme=light" alt="CyanArrow - Save&#0032;Time&#0032;&#0038;&#0032;Reduce&#0032;Costs&#0032;with&#0032;AI&#0032;Support&#0032;Agent | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" className=" max-lg:scale-[0.6] lg:scale-[0.85]" />
         </a>
-        <h1 className={cn( bgr.variable, "font-sans font-extrabold text-4xl lg:text-6xl text-accent tracking-tight md:-mb-4")}>
-          <span className=" flex !mb-2 ">Save Time & Cut Costs with{" "}{" "}</span>
+        <h1 className={cn( bgr1.variable, "font-sans font-extrabold text-4xl lg:text-6xl text-accent  md:-mb-4")}>
+          <span className=" flex !mb-2 leading-tigh ">Save Time & Cut Costs with{" "}{" "}</span>
           <span className=" relative whitespace-nowrap ">
-            <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 hover:animate-shimmer "></span>
-            <span className="relative text-accent">AI Support</span>
+            <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
+            <span className="relative text-accent ">AI Support</span>
           </span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
