@@ -88,7 +88,8 @@ module.exports = {
       {
         dark: {
           ...require("daisyui/src/theming/themes")["business"],
-          // primary: "#25d1da",
+          primary: "#22d3ee",
+          // "accent": "#eeaf3a",
           ".tech-used": { "fill": "white" },
           ".offer": {
             "--tw-text-opacity": "1",

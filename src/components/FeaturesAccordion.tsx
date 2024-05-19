@@ -26,7 +26,7 @@ const features = [
   {
     title: "Upload data",
     description:
-      "Upload your data for AI training. You can add data from Websites, Documents(pdf, docx, txt). Or simply create FAQs with our powerful editor. Then simply start AI training.",
+      "Upload your data for AI training from websites, documents (PDF, DOCX, TXT), or create FAQs using our powerful editor. Then, start the AI training process with ease.",
     type: "video",
     path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
     format: "video/mp4",
@@ -37,7 +37,7 @@ const features = [
   {
     title: "Customize Your Chatbot and Ticketing System",
     description:
-      "Personalize the appearance of the chatbot and ticket forms to fit your specific needs. ",
+      "Customize the appearance of your chatbot and ticket forms to meet your specific needs.",
     // type: "image",
     // path: "https://images.unsplash.com/photo-1571171637578-41bc2dd41cd2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=3540&q=80",
     // alt: "A computer",
@@ -48,7 +48,7 @@ const features = [
   {
     title: "Launch and Monitor",
     description:
-      "Simply copy the embed scripts from the chatbot/ticket form and add to your website. And thats it. Monitor conversations, captured leads and raised tickets.",
+      "Just copy the embed scripts for the chatbot or ticket form and add them to your website. That's it. You can then monitor conversations, captured leads, and raised tickets.",
     svg: (
       <Code2 className=" size-8 " />
     ),

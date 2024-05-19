@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Inter } from "next/font/google";
+import { Inter, Open_Sans, Anek_Latin } from "next/font/google";
 import { Viewport } from "next";
 // import PlausibleProvider from "next-plausible";
 import { getSEOTags } from "@/src/libs/seo";
@@ -8,7 +8,9 @@ import config from "@/config";
 import "./globals.css";
 import Script from "next/script";
 
-const font = Inter({ subsets: ["latin"] });
+// const font = Inter({ subsets: ["latin"] });
+const font = Open_Sans({subsets: ["latin"]});
+const bgr1 = Anek_Latin({ subsets: ["latin"], display: "swap", adjustFontFallback: false, variable: '--font-brigro' });
 
 export const viewport: Viewport = {
   // Will use the primary color of your theme to show a nice theme color in the URL bar of supported browsers
@@ -23,7 +25,7 @@ export const metadata = getSEOTags({ keywords: ["ai customer service", "ai chatb
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
-    <html lang="en" data-theme={config.colors.theme} className={font.className}>
+    <html lang="en" data-theme={config.colors.theme} className={`${font.className} ${bgr1.variable}`}>
       {config.domainName && (
         <head>
           {/* <PlausibleProvider domain={config.domainName} /> */}

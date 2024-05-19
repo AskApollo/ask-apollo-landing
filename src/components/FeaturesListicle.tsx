@@ -20,9 +20,9 @@ const features: {
         <ul className="space-y-2">
           {[
             "Quickly train on your data (Website, Documents, FAQs)",
-            "Collect leads with customizable lead forms",
-            "Personalie interface to match your website theme",
-            "Fine tune responses based on conversation history",
+            "Gather leads using tailored lead forms",
+            "Customize your interface to fit your website's style",
+            "Fine-tune responses using conversation history",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -54,7 +54,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Quick and Accurate responses to your customers
+              Deliver quick and accurate replies to your customers
           </li>
         </ul>
       </>
@@ -70,9 +70,9 @@ const features: {
         <ul className="space-y-2">
           {[
             "Quickly train on your data (Website, Documents, FAQs)",
-            "Collect tickets with highly customizable ticket forms",
-            "Resolve tickets with help of AI",
-            "Host ticketing system on CyanArrow",
+            "Gather tickets using highly customizable forms",
+            "Leverage AI to resolve tickets",
+            "Host your ticketing system on CyanArrow",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -104,7 +104,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Resolve tickets quickly and more accurately
+            Resolve tickets quickly and accurately
           </li>
         </ul>
       </>
@@ -119,9 +119,9 @@ const features: {
       <>
         <ul className="space-y-2">
           {[
-            "Create FAQ documents with feature rich text editor",
-            "Add the FAQs to the chatbot",
-            "Enable advance search for your customers to find FAQs"
+            "Create FAQ documents using a feature-rich text editor",
+            "Integrate the FAQs into your chatbot",
+            "Enable advanced search for customers to find FAQs"
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -153,7 +153,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Customers can find the knowledge quickly
+            Help customers find information quickly
           </li>
         </ul>
       </>
@@ -168,10 +168,10 @@ const features: {
       <>
         <ul className="space-y-2">
           {[
-            "Enable lead collection from the chatbot",
-            "Customize to collect needed information",
+            "Enable lead collection through the chatbot",
+            "Customize to gather the necessary information",
             "Track geographic location",
-            "See associated conversation history"
+            "Access associated conversation history"
           ].map(
             (item) => (
               <li key={item} className="flex items-center gap-3">
@@ -205,7 +205,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Collect leads with crucial information
+            Collect leads with vital details
           </li>
         </ul>
       </>
@@ -221,8 +221,8 @@ const features: {
         <ul className="space-y-2">
           {[
             "No-code drag-n-drop form builder",
-            "Create lead forms and ticket forms",
-            "Multiple field types available"
+            "Create lead forms and ticket forms effortlessly",
+            "Choose from multiple field types"
           ].map(
             (item) => (
               <li key={item} className="flex items-center gap-3">
@@ -256,7 +256,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Create lead forms and tikcet forms with ease
+            Design lead and ticket forms with ease
           </li>
         </ul>
       </>
@@ -272,8 +272,8 @@ const features: {
         <ul className="space-y-2">
           {[
             "Send the platform events to external system",
-            "Subscribe to different events",
-            "Event history to check past events",
+            "Subscribe to various events",
+            "Access event history to review past events",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -305,7 +305,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Easily synchronize your 3rd party systems
+            Easily synchronize with your third-party systems
           </li>
         </ul>
       </>

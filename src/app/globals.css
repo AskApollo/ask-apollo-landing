@@ -6,6 +6,9 @@ html,
 body {
   scroll-behavior: smooth !important;
 }
+h2 {
+  font-family: var(--font-brigro);
+}
 
 /* It makes the HTML progress bar filling smooth when value change. */
 progress::-webkit-progress-value {

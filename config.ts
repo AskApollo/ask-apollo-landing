@@ -59,7 +59,7 @@ const config = {
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Growth 🚀",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "All the essential features, run customer support at scale.",
+        description: "Essential features to run customer support at scale",
         // The price you want to display, the one user will be charged on Stripe.
         m_price: 49,
         y_price: 490,
@@ -91,7 +91,7 @@ const config = {
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Starter 🏍️",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "All the basic features, make customer support efficient.",
+        description: "Basic features to make customer support efficient.",
         // The price you want to display, the one user will be charged on Stripe.
         m_price: 19,
         y_price: 190,

@@ -84,15 +84,15 @@ const WithWithout = () => {
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mt-12 text-center">
-          <Step emoji="🤔" text="Customers asks a query" />
+          <Step emoji="🤔" text="Customers ask a question" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90 fill-success" />
 
-          <Step emoji="🤯" text="CyanArrow responds quickly and accurately" />
+          <Step emoji="🤯" text="CyanArrow answers promptly and precisely" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90 fill-success" />
 
-          <Step emoji="😃" text="Amazed & Happy customers" />
+          <Step emoji="😃" text="Delighted and satisfied customers" />
         </div>
       </div>
     </section>

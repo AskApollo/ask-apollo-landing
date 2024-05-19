@@ -55,21 +55,21 @@ const Problem = () => {
         </p>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
-          <Step emoji="👨‍💻" text="3+ months training for customer support" />
+          <Step emoji="👨‍💻" text="Customer support training takes over 3 months" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😅" text="Trained staff still struggle to assist accurately" />
+          <Step emoji="😅" text="Even trained staff struggle to assist accurately" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
-          <Step emoji="😔" text="Unhappy customers leave you" />
+          <Step emoji="😔" text="Unhappy customers leave as a result" />
         </div>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 max-w-3xl mx-auto mb-12">
           <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
             <h3 className="font-bold text-lg mb-4">
-              And this has very high cost
+              And this incurs very high costs
             </h3>
 
             <ul className="list-disc list-inside space-y-1.5 text-start ">
@@ -96,7 +96,7 @@ const Problem = () => {
         </div>
 
         <div className=" flex flex-col gap-4 mx-auto">
-          <p className=" text-lg">Well, there is a solution for this situation</p>
+          <p className=" text-lg">Fortunately, there{`'`}s a solution to this problem</p>
           <ArrowBigDownDashIcon className=" size-10 animate-bounce text-success mx-auto" />
         </div>
 
