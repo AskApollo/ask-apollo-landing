@@ -51,10 +51,10 @@ const Problem = () => {
           50% of Customers Leave After One Bad Support Experience
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Poor customer service drives customers away, hurting your bottom line
+          Solopreneurs can{`'`}t be available 24/7, leading to service gaps and unhappy customers.
         </p>
 
-        <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
+        {/* <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
           <Step emoji="👨‍💻" text="Customer support training takes over 3 months" />
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90" />
@@ -64,7 +64,7 @@ const Problem = () => {
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90" />
 
           <Step emoji="😔" text="Unhappy customers leave as a result" />
-        </div>
+        </div> */}
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12 max-w-3xl mx-auto mb-12">
           <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
@@ -79,12 +79,12 @@ const Problem = () => {
                 <span key={2}><strong>Brand Damage</strong>: Negative experiences spread quickly, damaging your reputation.</span>,
                 <span key={3}><strong>Customer Acquisition Costs:</strong> It{`'`}s more expensive to acquire new customers than to retain existing ones.</span>,
               ].map((item, index) => (
-                <li key={index} className="flex gap-2 items-center">
+                <li key={index} className="flex gap-2 ">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
                     fill="currentColor"
-                    className="w-4 h-4 shrink-0 opacity-75"
+                    className="w-4 h-4 shrink-0 opacity-75 mt-1"
                   >
                     <path d="M5.28 4.22a.75.75 0 0 0-1.06 1.06L6.94 8l-2.72 2.72a.75.75 0 1 0 1.06 1.06L8 9.06l2.72 2.72a.75.75 0 1 0 1.06-1.06L9.06 8l2.72-2.72a.75.75 0 0 0-1.06-1.06L8 6.94 5.28 4.22Z" />
                   </svg>

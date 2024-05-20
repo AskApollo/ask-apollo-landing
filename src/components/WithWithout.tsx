@@ -54,7 +54,7 @@ const WithWithout = () => {
                 <span key={1}><strong>24/7/365 Quality Support:</strong> Ensure your customers always get the help they need, anytime.</span>,
                 <span key={2}><strong>Instant FAQ Responses:</strong> Deliver accurate answers with 95% precision, instantly.</span>,
                 <span key={3}><strong>Save Time and Resources:</strong> Cut down over 10 hours per week on support tasks.</span>,
-                <span key={4}><strong>Boost Efficiency:</strong> Enable one support agent to manage the workload of ten.</span>,
+                <span key={4}><strong>Boost Efficiency:</strong> Empower yourself to manage the workload of 10.</span>,
                 <span key={5}><strong>Reduce Ticket Volume:</strong> Minimize the number of support tickets with proactive solutions.</span>,
                 // "Provide 24/7/365 quality customer support",
                 // `Instant reply to customer FAQs with 95% accuracy`,
@@ -62,12 +62,12 @@ const WithWithout = () => {
                 // "1 support staff can handle workload of 10",
                 // "Reduced number of tickets",
               ].map((item, index) => (
-                <li key={index} className="flex gap-2 items-center text-start">
+                <li key={index} className="flex gap-2 text-start">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     viewBox="0 0 16 16"
                     fill="currentColor"
-                    className="w-4 h-4 shrink-0 opacity-75"
+                    className="w-4 h-4 shrink-0 opacity-75 mt-1"
                   >
                     <path
                       fillRule="evenodd"

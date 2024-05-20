@@ -33,11 +33,16 @@ const Hero = () => {
           <img src="https://api.producthunt.com/widgets/embed-image/v1/featured.svg?post_id=457583&theme=light" alt="CyanArrow - Save&#0032;Time&#0032;&#0038;&#0032;Reduce&#0032;Costs&#0032;with&#0032;AI&#0032;Support&#0032;Agent | Product Hunt" style={{width: "250px", height: "54px"}} width="250" height="54" className=" max-lg:scale-[0.6] lg:scale-[0.85]" />
         </a>
         <h1 className={cn( "font-sans font-extrabold text-4xl lg:text-6xl text-base-content tracking-wid md:-mb-4")}>
-          <span className=" flex !mb-2 leading-tigh ">Save Time & Cut Costs with{" "}{" "}</span>
+          {/* <span className=" flex !mb-2 leading-tigh ">Save Time & Cut Costs with{" "}{" "}</span>Light weight customer support system for solopreneurs
           <span className=" relative whitespace-nowrap ">
             <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
             <span className="relative text-base-100 font ">AI Support Agent</span>
+          </span> */}
+          <span className=" relative whitespace-nowrap ">
+            <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
+            <span className="relative text-base-100 font ">AI-First Help Desk</span>
           </span>
+          <span className=" flex !mb-2 leading-tigh ">{" "}{" "}for Solopreneurs</span>
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
@@ -47,16 +52,20 @@ const Hero = () => {
         {/* <button className="btn btn-primary btn-lg ">
           Get Access Now
         </button> */}
-        <Link href="#pricing" className=" space-y-4 ">
-          {/* <ButtonGradient title="Get Access Now" /> */}
-          <button type="button" className="btn btn-primary">Get started now</button>
-          <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
-            <Gift />
-            <span>
-              <span className=" text-accent">$99 1 Year Access</span> for the first 100 customers
-            </span>
-          </p>
-        </Link>
+        <div className=" flex flex-col items-center lg:items-start justify-center space-y-4 ">
+          <Link href="#pricing" className=" flex w-fit">
+            {/* <ButtonGradient title="Get Access Now" /> */}
+            <button type="button" className="btn btn-primary">Get started now</button>
+          </Link>
+          <Link href="#1time" className=" flex">
+            <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
+              <Gift />
+              <span>
+                <span className=" text-accent">$99 for 1 Year</span> - First 100 Customers
+              </span>
+            </p>
+          </Link>
+        </div>
         <TestimonialsAvatars priority={true} />
       </div>
       <div className="lg:w-full">
