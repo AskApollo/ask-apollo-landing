@@ -33,7 +33,7 @@ const Pricing = () => {
           </div>
         </div>
 
-        <div className="relative flex justify-center flex-col-reverse lg:flex-row items-center lg:items-stretch gap-8">
+        <div className="relative flex justify-center flex-col lg:flex-row items-center lg:items-stretch gap-8">
           {config.stripe.plans.map((plan) => (
             <div key={plan.m_priceId} className="relative w-full max-w-lg">
               {plan.isFeatured && (

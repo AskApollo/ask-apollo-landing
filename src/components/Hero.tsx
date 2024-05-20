@@ -57,14 +57,14 @@ const Hero = () => {
             {/* <ButtonGradient title="Get Access Now" /> */}
             <button type="button" className="btn btn-primary">Get started now</button>
           </Link>
-          <Link href="#1time" className=" flex">
+          {/* <Link href="#1time" className=" flex">
             <p className="text-sm flex text-start items-center justify-end gap-2 md:text-sm">
               <Gift />
               <span>
                 <span className=" text-accent">$99 for 1 Year</span> - First 100 Customers
               </span>
             </p>
-          </Link>
+          </Link> */}
         </div>
         <TestimonialsAvatars priority={true} />
       </div>

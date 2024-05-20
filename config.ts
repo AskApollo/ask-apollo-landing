@@ -18,34 +18,34 @@ const config = {
   stripe: {
     // Create multiple plans in your Stripe dashboard, then add them here. You can add as many plans as you want, just make sure to add the priceId
     plans: [
-      {
-        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
-        m_priceId:
-          process.env.NODE_ENV === "development"
-            ? "price_1PEmoRSIKpTeZ6VRVfoZLpM4"
-            // ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd" //usd
-            : "price_1PGknNSIKpTeZ6VRnMUkySa1",
-        //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "1 Year Access 🔥",
-        isFeatured: true,
-        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Launch offer for the first 100 customers",
-        // The price you want to display, the one user will be charged on Stripe.
-        m_price: 99,
-        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        m_priceAnchor: 790,
-        features: [
-          { name: "6,000 AI Credits" },
-          { name: "5 Chatbots", },
-          { name: "50,000,000 Characters training data", },
-          { name: "Unlimited Lead Forms" },
-          { name: "5 Ticket Forms" },
-          { name: "10 Webhooks" },
-          { name: "API Access" },
-          { name: "Custom Domain" },
-          { name: "White Label" },
-        ],
-      },
+    //   {
+    //     // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+    //     m_priceId:
+    //       process.env.NODE_ENV === "development"
+    //         ? "price_1PEmoRSIKpTeZ6VRVfoZLpM4"
+    //         // ? "price_1PEYdmSIKpTeZ6VRjB4HDLHd" //usd
+    //         : "price_1PGknNSIKpTeZ6VRnMUkySa1",
+    //     //  REQUIRED - Name of the plan, displayed on the pricing page
+    //     name: "1 Year Access 🔥",
+    //     isFeatured: true,
+    //     // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+    //     description: "Launch offer for the first 100 customers",
+    //     // The price you want to display, the one user will be charged on Stripe.
+    //     m_price: 99,
+    //     // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+    //     m_priceAnchor: 790,
+    //     features: [
+    //       { name: "6,000 AI Credits" },
+    //       { name: "5 Chatbots", },
+    //       { name: "50,000,000 Characters training data", },
+    //       { name: "Unlimited Lead Forms" },
+    //       { name: "5 Ticket Forms" },
+    //       { name: "10 Webhooks" },
+    //       { name: "API Access" },
+    //       { name: "Custom Domain" },
+    //       { name: "White Label" },
+    //     ],
+    //   },
       {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         m_priceId:

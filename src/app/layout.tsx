@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 
 // This adds default SEO tags to all pages in our app.
 // You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags({ title: "CyanArrow - AI-First Customer Support!", keywords: ["ai customer service", "ai chatbot", "ai chatbots", "chatbot ai", "chat bot", "customer support"] });
+export const metadata = getSEOTags({ title: "CyanArrow - AI-First Help Desk!", keywords: ["ai customer service", "ai chatbot", "ai chatbots", "chatbot ai", "chat bot", "customer support"] });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
