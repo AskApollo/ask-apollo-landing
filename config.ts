@@ -58,6 +58,7 @@ const config = {
             : "price_1PGknISIKpTeZ6VRn2nyhIeG",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Growth 🚀",
+        isFeatured: true,
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
         description: "Essential features to run customer support at scale",
         // The price you want to display, the one user will be charged on Stripe.
