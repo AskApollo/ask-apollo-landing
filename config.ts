@@ -76,7 +76,7 @@ const config = {
           { name: "5 Ticket Forms" },
           { name: "10 Webhooks" },
           { name: "API Access" },
-          { name: "Custom Domain" },
+          // { name: "Custom Domain" },
           { name: "White Label" },
         ],
       }, {
