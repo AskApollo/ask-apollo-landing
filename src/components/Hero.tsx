@@ -39,10 +39,10 @@ const Hero = () => {
             <span className="relative text-base-100 font ">AI Support Agent</span>
           </span> */}
           <span className=" relative whitespace-nowrap ">
-            <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
+            <span className="absolute bg-base-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
             <span className="relative text-base-100 font ">AI-First Help Desk</span>
           </span>
-          <span className=" flex !mb-2 leading-tigh ">{" "}{" "}for Solopreneurs</span>
+          {/* <span className=" flex !mb-2 leading-tigh ">{" "}{" "}for Solopreneurs</span> */}
           {/* <span className=" flex !mt-2 ">with AI{" "}{" "}</span> */}
         </h1>
         <p className="text-lg opacity-80 leading-relaxed">
