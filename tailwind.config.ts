@@ -97,7 +97,8 @@ module.exports = {
             "fill": "var(--fallback-p,oklch(var(--p)/var(--tw-text-opacity)))"
           },
           ".hard-shadow": {
-            "box-shadow": "0px 29px 52px 0px rgba(255,255,255,.3)"
+            // "box-shadow": "0px 29px 52px 0px rgba(255,255,255,.3)",
+            "box-shadow": "0px 29px 52px 0px rgba(100,100,100,.2),22px 25px 16px 0px rgba(100,100,100,.1)"
           },
           "--rounded-btn": "1.9rem"
         }

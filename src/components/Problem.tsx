@@ -95,9 +95,9 @@ const Problem = () => {
           </div>
         </div>
 
-        <div className=" flex flex-col gap-4 mx-auto">
+        <div className=" flex flex-col gap-12 mx-auto">
           <p className=" text-lg">Fortunately, there{`'`}s a solution to this problem</p>
-          <ArrowBigDownDashIcon className=" size-10 animate-bounce text-success mx-auto" />
+          <ArrowBigDownDashIcon className=" size-10 animate-bounce text-primary mx-auto" />
         </div>
 
       </div>
