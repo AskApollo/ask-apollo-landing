@@ -50,7 +50,7 @@ const Header = () => {
   return (
     <header className="bg-base-100">
       <nav
-        className="container flex items-center justify-between px-8 py-4 mx-auto max-w-7xl"
+        className="container relative flex items-center justify-between px-8 py-4 mx-auto max-w-7xl"
         aria-label="Global"
       >
         {/* Your logo/name on large screens */}
@@ -63,7 +63,7 @@ const Header = () => {
             <Image
               src={logo}
               alt={`${config.appName} logo`}
-              className="w-8 h-8"
+              className=" size-14 "
               priority={true}
               width={32}
               height={32}
