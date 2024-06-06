@@ -51,7 +51,7 @@ const Problem = () => {
           50% of Customers Leave After One Bad Support Experience
         </h2>
         <p className="max-w-xl mx-auto text-lg opacity-90 leading-relaxed mb-12 md:mb-20">
-          Solopreneurs can{`'`}t be available 24/7, leading to service gaps and unhappy customers.
+          Businesses can{`'`}t be available 24/7, leading to service gaps and unhappy customers.
         </p>
 
         {/* <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-6 mb-12">
