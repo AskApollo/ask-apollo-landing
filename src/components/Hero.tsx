@@ -30,7 +30,7 @@ const Hero = () => {
         </a> */}
         
         <div className=" flex flex-col space-y-4 items-center justify-center text-center lg:text-left lg:items-start lg:w-full">
-        <h1 className={cn("font-sans font-extrabold text-4xl lg:text-6xl text-base-content tracking-wide ")}>
+        <h1 className={cn("font-sans font-extrabold text-4xl lg:text-6xl text-base-content tracking-tight ")}>
           {/* <span className=" flex !mb-2 leading-tigh ">Save Time & Cut Costs with{" "}{" "}</span>Light weight customer support system for solopreneurs
           <span className=" relative whitespace-nowrap ">
             <span className="absolute bg-accent-content -left-2 -top-1 -bottom-1 -right-2 md:-left-3 md:-top-0 md:-bottom-0 md:-right-3 -rotate-1 mx-1 "></span>
