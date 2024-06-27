@@ -13,7 +13,7 @@ export default function FounderStory() {
                 </div>
                 <div className="leading-relaxed text-base-content/80 mb-12 max-w-xl mx-auto">
                     <Image alt="Anshul Kumar - Dreamer, Builder" loading="lazy" width="200" height="200"
-                        className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-8 mb-8 object-center object-cover"
+                        className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-4 mb-4 md:mr-8 md:mb-8 object-center object-cover [shape-outside:circle()] [clip-path:circle()]"
                         src="/assets/mine.png" />
                     <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Anshul 👋</p>
                     <p className="mb-5">

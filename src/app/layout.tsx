@@ -83,7 +83,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           </Script>
         </head>
       )}
-      <body>
+      <body className={`${process.env.NODE_ENV == "development" ? "showgrid" : "" } `}>
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
       </body>
