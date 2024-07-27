@@ -86,7 +86,8 @@ const Hero = () => {
               width={500}
               height={500}
             /> */}
-        <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/CA%20Landing%20Intro-4fK3EueA6l1vZ49QYV4eOLboEthDFN.mp4" />
+        {/* <VideoPlayer variant="secondary" src="https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/CA%20Landing%20Intro-4fK3EueA6l1vZ49QYV4eOLboEthDFN.mp4" /> */}
+        <VideoPlayer variant="secondary" src="https://ijxacagli9ceatts.public.blob.vercel-storage.com/landing/CA%20Landing%20Intro-DECyCgCJ1yrZV83UptdAFoZScBK2pa.mp4" />
         {/* </div>
         </div> */}
       </div>
