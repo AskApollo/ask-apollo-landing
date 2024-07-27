@@ -32,7 +32,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
           {
             process.env.NODE_ENV != "development" &&
             <>
-              <Script type="text/javascript" id="clarity-tag">
+              {/* <Script type="text/javascript" id="clarity-tag">
                 {`
                                 (function(c,l,a,r,i,t,y){
                                     c[a]=c[a]||function(){(c[a].q=c[a].q||[]).push(arguments)};
@@ -41,7 +41,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                                 })(window, document, "clarity", "script", "iou18u3cgf");
                             `}
               </Script>
-              {/* <Script async src="https://www.googletagmanager.com/gtag/js?id=GTM-KDFPLPP9"></Script> */}
+              
               <Script id="google-tag-manager">
                 {`
                                 (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
@@ -62,7 +62,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                                 gtag('config', 'G-PQ6YK9QZ4K');
                                 gtag('config', 'AW-11397979838');
                             `}
-              </Script>
+              </Script> */}
             </>
           }
 
