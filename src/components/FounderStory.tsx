@@ -14,8 +14,8 @@ export default function FounderStory() {
                 <div className="leading-relaxed text-base-content/80 mb-12 max-w-xl mx-auto">
                     <Image alt="Anshul Kumar - Dreamer, Builder" loading="lazy" width="200" height="200"
                         className="w-32 h-32 md:w-52 md:h-52 rounded-lg float-left mr-4 mb-4 md:mr-8 md:mb-8 object-center object-cover [shape-outside:circle()] [clip-path:circle()]"
-                        src="/assets/mine.png" />
-                    <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Anshul 👋</p>
+                        src="" />
+                    <p className="mb-4 text-base-content md:text-lg font-medium">Hey, it{`'`}s Terrell 👋</p>
                     <p className="mb-5">
                         For over a decade, I worked with big corporations, gaining extensive experience in Business Sales and Support software development.
                         During my career, I’ve had the pleasure of working with 20+ clients across various industries, including Banking, Healthcare, and Education.
@@ -25,9 +25,9 @@ export default function FounderStory() {
                         Leveraging my expertise in customer support software development, I founded AskApollo to help businesses provide exceptional customer service.
                     </p>
                     <p className=" flex gap-2 mb-5 items-start">Feel free to reachout to me at
-                        <Link href="https://www.linkedin.com/in/anshul-kumar-812b9a18/" target="_blank" rel="noreferrer" title="LinkedIn"><Linkedin className=" size-5" /></Link>
+                        <Link href="" target="_blank" rel="noreferrer" title="LinkedIn"><Linkedin className=" size-5" /></Link>
                         or
-                        <Link href="https://twitter.com/AnshCooll" target="_blank" rel="noreferrer" title="X (Twitter)"><XTwitter /></Link>
+                        <Link href="" target="_blank" rel="noreferrer" title="X (Twitter)"><XTwitter /></Link>
                     </p>
                     {/* <ul className="list-inside list-decimal space-y-1.5 ml-5 mb-5">
                         <li>
