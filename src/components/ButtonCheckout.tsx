@@ -33,7 +33,7 @@ const ButtonCheckout = ({
       //   }
       // );
 
-      window.location.href = `https://app.cyanarrow.com?view=sign_up&pid=${priceId}&pm=${mode}`;
+      window.location.href = `https://app.askapollohq.com?view=sign_up&pid=${priceId}&pm=${mode}`;
     } catch (e) {
       console.error(e);
     }

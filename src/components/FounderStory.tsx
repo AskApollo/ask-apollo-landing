@@ -22,7 +22,7 @@ export default function FounderStory() {
                     </p>
                     <p className="mb-5">
                         In 2022, seeking greater fulfillment, I left my corporate job to embark on my solopreneur journey.
-                        Leveraging my expertise in customer support software development, I founded CyanArrow to help businesses provide exceptional customer service.
+                        Leveraging my expertise in customer support software development, I founded AskApollo to help businesses provide exceptional customer service.
                     </p>
                     <p className=" flex gap-2 mb-5 items-start">Feel free to reachout to me at
                         <Link href="https://www.linkedin.com/in/anshul-kumar-812b9a18/" target="_blank" rel="noreferrer" title="LinkedIn"><Linkedin className=" size-5" /></Link>

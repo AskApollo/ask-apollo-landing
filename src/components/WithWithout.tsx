@@ -10,13 +10,13 @@ const WithWithout = () => {
       <div className="max-w-5xl mx-auto px-8 py-16 md:py-32 ">
         <h2 className="text-center font-extrabold text-3xl md:text-5xl tracking-tight mb-12 md:mb-20">
           {/* Tired of managing customer support and resolving support tickets? */}
-          Enhance Your Customer Support with CyanArrow
+          Enhance Your Customer Support with AskApollo
         </h2>
 
         <div className="flex flex-col md:flex-row justify-center items-center md:items-start gap-8 md:gap-12">
           {/* <div className="bg-error/20 text-error p-8 md:p-12 rounded-lg w-full ">
             <h3 className="font-bold text-lg mb-4">
-              Websites without CyanArrow
+              Websites without AskApollo
             </h3>
 
             <ul className="list-disc list-inside space-y-1.5 ">
@@ -45,7 +45,7 @@ const WithWithout = () => {
 
           <div className="bg-success/20 text-success p-8 md:p-12 rounded-lg w-full text-center max-w-3xl">
             <h3 className="font-bold text-lg mb-4">
-              Websites + CyanArrow
+              Websites + AskApollo
             </h3>
 
             <ul className="list-disc list-inside space-y-1.5 text-start">
@@ -88,7 +88,7 @@ const WithWithout = () => {
 
           <Arrow extraStyle="max-md:-scale-x-100 md:-rotate-90 fill-success" />
 
-          <Step emoji="🤯" text="CyanArrow answers promptly and precisely" />
+          <Step emoji="🤯" text="AskApollo answers promptly and precisely" />
 
           <Arrow extraStyle="md:-scale-x-100 md:-rotate-90 fill-success" />
 

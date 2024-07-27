@@ -32,7 +32,7 @@ const Footer = () => {
               {/* <strong className="font-extrabold tracking-tight text-base md:text-lg">
                 {config.appName}
               </strong> */}
-              <span className={`${anek.className} text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
+              <span className={`${anek.className} text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>ASK<span className="font-normal ">APOLLO</span></span>
             </Link>
 
             <p className="mt-3 text-sm text-base-content/80">
@@ -62,7 +62,7 @@ const Footer = () => {
                 <Link href="/#pricing" className="link link-hover">
                   Pricing
                 </Link>
-                <Link href="https://blog.cyanarrow.com" target="_blank" className="link link-hover flex items-center">
+                <Link href="https://blog.askapollohq.com" target="_blank" className="link link-hover flex items-center">
                   Blog <ArrowUpRightFromSquare className=" size-3 ml-2"></ArrowUpRightFromSquare>
                 </Link>
                 {/* <a href="/#" target="_blank" className="link link-hover">

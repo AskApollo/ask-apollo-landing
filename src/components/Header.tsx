@@ -69,7 +69,7 @@ const Header = () => {
               height={32}
             />
             {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
-            <span className={` font-sans text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
+            <span className={` font-sans text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>ASK<span className="font-normal ">APOLLO</span></span>
           </Link>
         </div>
         {/* Burger button to open menu on mobile */}
@@ -169,7 +169,7 @@ const Header = () => {
                 height={32}
               />
               {/* <span className="font-extrabold text-lg">{config.appName}</span> */}
-              <span className={` font-sans text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>CYAN<span className="font-normal ">ARROW</span></span>
+              <span className={` font-sans text-2xl lg:text-3xl font-bold whitespace-nowrap text-transparent bg-clip-text bg-gradient-to-r from-[#1F7FF0] via-[#00ffff] to-[#1F7FF0]`}>ASK<span className="font-normal ">APOLLO</span></span>
             </Link>
             <button
               type="button"

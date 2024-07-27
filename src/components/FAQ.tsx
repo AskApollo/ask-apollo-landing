@@ -109,7 +109,7 @@ const FAQ = () => {
             <FaqItem key={i} item={item} />
           ))} */}
           <iframe
-            src="https://app.cyanarrow.com/chatbot/e2bf4ca8-f931-48c9-8886-701eda3434e7?i=1&faq=1"
+            src="https://app.askapollohq.com/chatbot/e2bf4ca8-f931-48c9-8886-701eda3434e7?i=1&faq=1"
             width="100%" height="650px" className=" rounded-3xl border hard-shadow">
           </iframe>
         </ul>

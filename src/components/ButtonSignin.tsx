@@ -54,7 +54,7 @@ const ButtonSignin = ({
   return (
     <Link
       className={`btn btn-sm ${extraStyle ? extraStyle : ""}`}
-      href="https://app.cyanarrow.com" target="_blank"
+      href="https://app.askapollohq.com" target="_blank"
     >
       {text}
     </Link>

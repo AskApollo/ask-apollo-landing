@@ -72,7 +72,7 @@ const features: {
             "Quickly train on your data (Website, Documents, FAQs)",
             "Gather tickets using highly customizable forms",
             "Leverage AI to resolve tickets",
-            "Host your ticketing system on CyanArrow",
+            "Host your ticketing system on AskApollo",
           ].map((item) => (
             <li key={item} className="flex items-center gap-3">
               <svg
@@ -353,7 +353,7 @@ const features: {
                 clipRule="evenodd"
               />
             </svg>
-            Easily access CyanArrow from 3rd party systems
+            Easily access AskApollo from 3rd party systems
           </li>
         </ul>
       </>
@@ -418,14 +418,14 @@ const FeaturesListicle = () => {
     <section className="py-24" id="features">
       <div className="max-w-3xl mx-auto">
         <div className="bg-base-100 max-md:px-8 max-w-3xl">
-          <p className="font-medium text-accent mb-8">Discover the power of CyanArrow</p>
+          <p className="font-medium text-accent mb-8">Discover the power of AskApollo</p>
           <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-8">
             {/* 💡 COPY TIP: Remind visitors about the value of your product. Why do they need it? */}
             Supercharge Your Support, Save Time, Boost Profits
           </h2>
           <div className="text-base-content/80 leading-relaxed mb-8 lg:text-lg">
             {/* 💡 COPY TIP: Explain how your product delivers what you promise in the headline. */}
-            CyanArrow’s AI-powered customer support ecosystem enhances efficiency, saves time, delights your customers, and ultimately boosts your profits
+            AskApollo’s AI-powered customer support ecosystem enhances efficiency, saves time, delights your customers, and ultimately boosts your profits
           </div>
         </div>
       </div>

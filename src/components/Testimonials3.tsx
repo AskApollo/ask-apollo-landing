@@ -15,7 +15,7 @@ const list: {
     // REQUIRED
     name: "Lionel T.",
     // REQUIRED
-    text: "For anyone on the fence - in the 1 hour I've set up and gone live on separate websites with CyanArrow. ",
+    text: "For anyone on the fence - in the 1 hour I've set up and gone live on separate websites with AskApollo. ",
     // Optional, a statically imported image (usually from your public folder—recommended) or a link to the person's avatar. Shows a fallback letter if not provided
     img: "https://images.unsplash.com/photo-1714118657863-2843a622718b?q=80&w=1976&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
   },
@@ -92,7 +92,7 @@ const Testimonials3 = () => {
             </h2>
           </div>
           <p className="lg:w-2/3 mx-auto leading-relaxed text-base text-base-content/80">
-            Don’t just take our word for it – see what our satisfied customers are saying about CyanArrow
+            Don’t just take our word for it – see what our satisfied customers are saying about AskApollo
           </p>
         </div>
 

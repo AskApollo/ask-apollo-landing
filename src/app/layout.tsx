@@ -1,5 +1,5 @@
 import { ReactNode } from "react";
-import { Inter, Open_Sans, Anek_Latin } from "next/font/google";
+import { Open_Sans, Anek_Latin } from "next/font/google";
 import { Viewport } from "next";
 // import PlausibleProvider from "next-plausible";
 import { getSEOTags } from "@/src/libs/seo";
@@ -21,7 +21,7 @@ export const viewport: Viewport = {
 
 // This adds default SEO tags to all pages in our app.
 // You can override them in each page passing params to getSOTags() function.
-export const metadata = getSEOTags({ title: "CyanArrow - AI-First Help Desk!", keywords: ["ai customer service", "ai chatbot", "ai chatbots", "chatbot ai", "chat bot", "customer support"] });
+export const metadata = getSEOTags({ title: "AskApollo - AI-First Help Desk!", keywords: ["ai customer service", "ai chatbot", "ai chatbots", "chatbot ai", "chat bot", "customer support"] });
 
 export default function RootLayout({ children }: { children: ReactNode }) {
   return (
@@ -66,7 +66,7 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </>
           }
 
-          <Script async id="e2bf4ca8-f931-48c9-8886-701eda3434e7" src="https://app.cyanarrow.com/lib/widget/v1/prod/agent.min.js">
+          {/* <Script async id="e2bf4ca8-f931-48c9-8886-701eda3434e7" src="https://app.askapollohq.com/lib/widget/v1/prod/agent.min.js"> */}
             {/* {`(function(doc, tag, id) {
               const sct = doc.querySelector(tag+"#"+id);
               if (sct) {
@@ -74,13 +74,13 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               }
               let js = doc.createElement(tag);
               js.id = id;
-              js.src = 'https://app.cyanarrow.com/lib/widget/v1/prod/agent.min.js';
+              js.src = 'https://app.askapollohq.com/lib/widget/v1/prod/agent.min.js';
               js.type = 'text/javascript';
               js.defer = 1;
               doc.head.appendChild(js);
               window.supportagentloaded = false;
             }(document, 'script', 'e2bf4ca8-f931-48c9-8886-701eda3434e7'));`} */}
-          </Script>
+          {/* </Script> */}
         </head>
       )}
       <body className={`${process.env.NODE_ENV == "development" ? "showgrid" : "" } `}>
