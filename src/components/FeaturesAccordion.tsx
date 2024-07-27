@@ -28,7 +28,8 @@ const features = [
     description:
       "Upload your data for AI training from websites, documents (PDF, DOCX, TXT), or create FAQs using our powerful editor. Then, start the AI training process with ease.",
     type: "video",
-    path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
+    // path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
+    path: "https://ijxacagli9ceatts.public.blob.vercel-storage.com/landing/upload-data-OfLwYrDpiuOwP8I3v3ekW29edi4HR8.mp4",
     format: "video/mp4",
     svg: (
       <Upload className=" size-8" />
