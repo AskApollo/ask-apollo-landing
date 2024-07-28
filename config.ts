@@ -50,23 +50,84 @@ const config = {
         // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
         m_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEmpeSIKpTeZ6VReMPFpKzr"
-            : "price_1PGknISIKpTeZ6VRJ6dU7Uzv",
+            ? "price_1PhTohCg1sB6lwKVN2nNT5Gf"
+            : "price_1PhTohCg1sB6lwKVN2nNT5Gf",
         y_priceId:
           process.env.NODE_ENV === "development"
-            ? "price_1PEmq0SIKpTeZ6VRfuhQCCme"
-            : "price_1PGknISIKpTeZ6VRn2nyhIeG",
+            ? "price_1PhTpZCg1sB6lwKViw1yBSie"
+            : "price_1PhTpZCg1sB6lwKViw1yBSie",
         //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Growth 🚀",
+        name: "Standard",
+        isFeatured: false,
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        // description: "Essential features to run customer support at scale",
+        // The price you want to display, the one user will be charged on Stripe.
+        m_price: 29,
+        y_price: 264,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        m_priceAnchor: 49,
+        y_priceAnchor: 348,
+        subscription: true,
+        features: [
+          { name: "2,500 AI Credits" },
+          { name: "2 Chatbots", },
+          { name: "20,000,000 Characters training data", },
+          { name: "Unlimited Lead Forms" },
+          { name: "2 Ticket Forms" },
+        ],
+      }, {
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        m_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PhTr5Cg1sB6lwKVP8dy3EAB"
+            : "price_1PhTr5Cg1sB6lwKVP8dy3EAB",
+        y_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PhTs8Cg1sB6lwKVgNidwZ3h"
+            : "price_1PhTs8Cg1sB6lwKVgNidwZ3h",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Pro",
         isFeatured: true,
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Essential features to run customer support at scale",
+        // description: "Essential features to run customer support at scale",
         // The price you want to display, the one user will be charged on Stripe.
-        m_price: 49,
-        y_price: 490,
+        m_price: 99,
+        y_price: 828,
         // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        m_priceAnchor: 79,
-        y_priceAnchor: 790,
+        m_priceAnchor: 149,
+        y_priceAnchor: 1188,
+        subscription: true,
+        features: [
+          { name: "6,000 AI Credits" },
+          { name: "5 Chatbots", },
+          { name: "50,000,000 Characters training data", },
+          { name: "Unlimited Lead Forms" },
+          { name: "5 Ticket Forms" },
+          // { name: "10 Webhooks" },
+          // { name: "API Access" },
+          // { name: "Custom Domain" },
+          { name: "White Label" },
+        ],
+      }, {
+        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
+        m_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PhTtkCg1sB6lwKV0arPFP0F"
+            : "price_1PhTtkCg1sB6lwKV0arPFP0F",
+        y_priceId:
+          process.env.NODE_ENV === "development"
+            ? "price_1PhTuTCg1sB6lwKVDknKRyI2"
+            : "price_1PhTuTCg1sB6lwKVDknKRyI2",
+        //  REQUIRED - Name of the plan, displayed on the pricing page
+        name: "Expert",
+        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
+        // description: "Basic features to make customer support efficient.",
+        // The price you want to display, the one user will be charged on Stripe.
+        m_price: 399,
+        y_price: 3348,
+        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
+        m_priceAnchor: 449,
+        y_priceAnchor: 4788,
         subscription: true,
         features: [
           { name: "6,000 AI Credits" },
@@ -78,34 +139,6 @@ const config = {
           { name: "API Access" },
           // { name: "Custom Domain" },
           { name: "White Label" },
-        ],
-      }, {
-        // REQUIRED — we use this to find the plan in the webhook (for instance if you want to update the user's credits based on the plan)
-        m_priceId:
-          process.env.NODE_ENV === "development"
-            ? "price_1PEmqzSIKpTeZ6VR9mAhrFJI"
-            : "price_1PGknCSIKpTeZ6VR0QzfahX2",
-        y_priceId:
-          process.env.NODE_ENV === "development"
-            ? "price_1PEmrKSIKpTeZ6VROMY1RQZh"
-            : "price_1PGknCSIKpTeZ6VRPObnT9wY",
-        //  REQUIRED - Name of the plan, displayed on the pricing page
-        name: "Starter 🏍️",
-        // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
-        description: "Basic features to make customer support efficient.",
-        // The price you want to display, the one user will be charged on Stripe.
-        m_price: 19,
-        y_price: 190,
-        // If you have an anchor price (i.e. $29) that you want to display crossed out, put it here. Otherwise, leave it empty
-        m_priceAnchor: 29,
-        y_priceAnchor: 290,
-        subscription: true,
-        features: [
-          { name: "2,500 AI Credits" },
-          { name: "2 Chatbots", },
-          { name: "20,000,000 Characters training data", },
-          { name: "Unlimited Lead Forms" },
-          { name: "2 Ticket Forms" },
         ],
       },
     ],

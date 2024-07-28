@@ -29,7 +29,7 @@ const Pricing = () => {
           <div className=" flex gap-4 items-center">
             <span className=" w-40">Monthly</span>
             <input type="checkbox" className="toggle toggle-lg" checked={yearly} onChange={(e) => setyearly(e.target.checked)} />
-            <span className=" w-40">Yearly <br /><span className=" text-primary">(2 months free 🎉)</span></span>
+            <span className=" w-40">Yearly <br /><span className=" text-primary">(Save 30% 🎉)</span></span>
           </div>
         </div>
 
@@ -89,19 +89,19 @@ const Pricing = () => {
                       <p className="relative">
                         <span className="absolute bg-base-content h-[1.5px] inset-x-0 top-[53%]"></span>
                         <span className="text-base-content/80">
-                          ${plan.y_priceAnchor}
+                          ${plan.y_priceAnchor.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                         </span>
                       </p>
                     </div>
                   )}
-                  {!plan.subscription && <p className={`text-5xl tracking-tight font-extrabold`}>
+                  {!plan.subscription && <p className={`text-4xl tracking-tight font-extrabold`}>
                     ${plan.m_price}
                   </p>}
-                  {plan.subscription && !yearly && <p className={`text-5xl tracking-tight font-extrabold`}>
+                  {plan.subscription && !yearly && <p className={`text-4xl tracking-tight font-extrabold`}>
                     ${plan.m_price}
                   </p>}
-                  {plan.subscription && yearly && <p className={`text-5xl tracking-tight font-extrabold`}>
-                    ${plan.y_price}
+                  {plan.subscription && yearly && <p className={`text-4xl tracking-tight font-extrabold`}>
+                    ${plan.y_price.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",")}
                   </p>}
                   <div className="flex flex-col justify-end mb-[4px]">
                     <p className="text-xs text-base-content/60 uppercase font-semibold">
