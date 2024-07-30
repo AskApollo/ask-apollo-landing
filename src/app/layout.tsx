@@ -66,8 +66,8 @@ export default function RootLayout({ children }: { children: ReactNode }) {
             </>
           }
 
-          {/* <Script async id="e2bf4ca8-f931-48c9-8886-701eda3434e7" src="https://app.askapollohq.com/lib/widget/v1/prod/agent.min.js"> */}
-            {/* {`(function(doc, tag, id) {
+          <Script async id={`${process.env.BOT_ID}`} src="https://app.askapollohq.com/lib/widget/v1/prod/agent.min.js">
+            {`(function(doc, tag, id) {
               const sct = doc.querySelector(tag+"#"+id);
               if (sct) {
                 sct.remove();
@@ -79,11 +79,11 @@ export default function RootLayout({ children }: { children: ReactNode }) {
               js.defer = 1;
               doc.head.appendChild(js);
               window.supportagentloaded = false;
-            }(document, 'script', 'e2bf4ca8-f931-48c9-8886-701eda3434e7'));`} */}
-          {/* </Script> */}
+            }(document, 'script', '${process.env.BOT_ID}'));`}
+          </Script>
         </head>
       )}
-      <body className={`${process.env.NODE_ENV == "development" ? "showgrid" : "" } `}>
+      <body className={`${process.env.NODE_ENV == "development" ? "" : "" } `}>
         {/* ClientLayout contains all the client wrappers (Crisp chat support, toast messages, tooltips, etc.) */}
         <ClientLayout>{children}</ClientLayout>
       </body>
