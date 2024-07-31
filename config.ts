@@ -51,11 +51,11 @@ const config = {
         m_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTohCg1sB6lwKVN2nNT5Gf"
-            : "price_1PhTohCg1sB6lwKVN2nNT5Gf",
+            : "price_1PieIGCg1sB6lwKV7IxyV9Vy",
         y_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTpZCg1sB6lwKViw1yBSie"
-            : "price_1PhTpZCg1sB6lwKViw1yBSie",
+            : "price_1PieIGCg1sB6lwKVY2WBk0hO",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Standard",
         isFeatured: false,
@@ -80,11 +80,11 @@ const config = {
         m_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTr5Cg1sB6lwKVP8dy3EAB"
-            : "price_1PhTr5Cg1sB6lwKVP8dy3EAB",
+            : "price_1PieIvCg1sB6lwKVuonaKNwD",
         y_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTs8Cg1sB6lwKVgNidwZ3h"
-            : "price_1PhTs8Cg1sB6lwKVgNidwZ3h",
+            : "price_1PieIvCg1sB6lwKVpkxbm1Ta",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Pro",
         isFeatured: true,
@@ -113,11 +113,11 @@ const config = {
         m_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTtkCg1sB6lwKV0arPFP0F"
-            : "price_1PhTtkCg1sB6lwKV0arPFP0F",
+            : "price_1PieIyCg1sB6lwKVJrXcnIPF",
         y_priceId:
           process.env.NODE_ENV === "development"
             ? "price_1PhTuTCg1sB6lwKVDknKRyI2"
-            : "price_1PhTuTCg1sB6lwKVDknKRyI2",
+            : "price_1PieIyCg1sB6lwKVBFv94dW1",
         //  REQUIRED - Name of the plan, displayed on the pricing page
         name: "Expert",
         // A friendly description of the plan, displayed on the pricing page. Tip: explain why this plan and not others
