@@ -27,10 +27,10 @@ const features = [
     title: "Upload data",
     description:
       "Upload your data for AI training from websites, documents (PDF, DOCX, TXT), or create FAQs using our powerful editor. Then, start the AI training process with ease.",
-    type: "video",
-    // path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
-    path: "https://ijxacagli9ceatts.public.blob.vercel-storage.com/landing/upload-data-OfLwYrDpiuOwP8I3v3ekW29edi4HR8.mp4",
-    format: "video/mp4",
+    // type: "video",
+    // // path: "https://uc3b3aipuvs3z1xy.public.blob.vercel-storage.com/Intro/upload-data-YZmect61PG50csu1nVEE9fovoFH1sQ.mp4",
+    // path: "https://ijxacagli9ceatts.public.blob.vercel-storage.com/landing/upload-data-OfLwYrDpiuOwP8I3v3ekW29edi4HR8.mp4",
+    // format: "video/mp4",
     svg: (
       <Upload className=" size-8" />
     ),
@@ -157,7 +157,7 @@ const FeaturesAccordion = () => {
       className=" flex justify-center py-24 md:py-32 space-y-24 md:space-y-32 max-w-7xl mx-auto bg-base-200  "
       id="features"
     >
-      <div className=" flex flex-col px-8 max-w-5xl items-center">
+      <div className=" flex flex-col px-8 max-w-5xl items-start">
         <h2 className="font-extrabold text-3xl lg:text-5xl tracking-tight mb-12 md:mb-24 max-w-3xl">
           Get Started in {" "}<br className=" max-md:block hidden"/>
           <span className="bg-base-content text-base-100 px-2 md:px-4 ml-1 md:ml-1.5 leading-relaxed md:whitespace-nowrap">

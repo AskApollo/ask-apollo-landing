@@ -25,10 +25,10 @@ export default function Home() {
         <Hero />
         <FeaturedOn />
         <TechUsed />
+        <FeaturesListicle />
         <Problem />
         <WithWithout />
         <FeaturesAccordion />
-        <FeaturesListicle />
         <LiveDemo />
         <Pricing />
         <Testimonials3 />
