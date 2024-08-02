@@ -23,7 +23,7 @@ export default function Home() {
       </Suspense>
       <main>
         <Hero />
-        <FeaturedOn />
+        {/* <FeaturedOn /> */}
         <TechUsed />
         <FeaturesListicle />
         <Problem />

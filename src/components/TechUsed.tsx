@@ -1,6 +1,6 @@
 export default function TechUsed() {
     return (
-        <section className="p-8 md:p-8 flex flex-wrap items-center justify-center gap-4 md:gap-8 bg-base ">
+        <section className="p-8 md:p-8 flex flex-wrap items-center justify-center gap-4 md:gap-8 bg-base lg:-mt-20 ">
             <span className="text-xs text-[10px] opacity-50">Powered by</span>
             <a href="https://aws.amazon.com/" target="_blank" rel="noreferrer" title="AWS Cloud Computing">
                 <svg xmlns="http://www.w3.org/2000/svg" version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 304 182" className=" h-[30px] w-fit opacity-50 hover:opacity-100 transition-opacity duration-300" >
