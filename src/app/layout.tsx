@@ -41,6 +41,26 @@ export default function RootLayout({ children }: { children: ReactNode }) {
                                 })(window, document, "clarity", "script", "iou18u3cgf");
                             `}
               </Script>
+<script type="text/javascript">
+  /* To enable Participant Auto Authentication for your logged-in users, uncomment this code below (https://docs.growsurf.com/getting-started/participant-auto-authentication) */
+  /*
+  window.grsfConfig = {
+    email: "participant@email.com",// Replace this with the participant's email address
+    hash: "HASH_VALUE" // Replace this with the SHA-256 HMAC value
+  };
+  */
+  (function(g,r,s,f){g.grsfSettings={campaignId:"7o3fgk",version:"2.0.0"};s=r.getElementsByTagName("head")[0];f=r.createElement("script");f.async=1;f.src="https://app.growsurf.com/growsurf.js"+"?v="+g.grsfSettings.version;f.setAttribute("grsf-campaign", g.grsfSettings.campaignId);!g.grsfInit?s.appendChild(f):"";})(window,document);
+</script>
+
+
+
+
+
+
+
+
+
+
               
               <Script id="google-tag-manager">
                 {`
